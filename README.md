@@ -1,7 +1,8 @@
+# ♟️ ChessMate
 
-# README – Installation & Setup
+# Installation & Setup
 
-This document describes, in order, the steps to prepare the environment, build the images, and launch the application.
+This part describes, in order, the steps to prepare the environment, build the images, and launch the application.
 
 ---
 
