@@ -5,45 +5,12 @@ This document describes, in order, the steps to prepare the environment, build t
 
 ---
 
-## 0) Create a **GitLab Personal Access Token**
-
-1. Open **GitLab** → **Preferences** → **Access Tokens**.
-2. Click **Add new token** and choose a clear name.
-3. Check the following permissions:
-
-   * ✅ `api`
-   * ✅ `read_registry`
-   * ✅ `write_registry`
-4. Click **Create personal access token** and **copy the token immediately** once it's displayed.
-
-> Keep this token secure; it may be referenced via `.env` if needed. With Git over HTTPS, it may also be requested as a **password** during `clone/pull/push` operations.
-
----
-
 ## 1) Clone the repository
 
-> **Note**: the GitLab server may have a misconfigured SSL certificate. Two options:
->
-> **Option A – Disable globally (quick but not recommended)**
->
-> ```bash
-> git config --global http.sslVerify false
-> git clone https://gitlabvigan.iem/m1projettutore2025-2026-groupe4/lichess-2025-2026.git
-> cd lichess-2025-2026
-> ```
->
-> **Option B – Disable on a case-by-case basis (recommended)**
->
-> ```bash
-> git -c http.sslVerify=false clone https://gitlabvigan.iem/m1projettutore2025-2026-groupe4/lichess-2025-2026.git
-> cd lichess-2025-2026
-> ```
->
-> Remember to re-enable SSL verification later if you used Option A:
->
-> ```bash
-> git config --global http.sslVerify true
-> ```
+```bash
+git clone https://github.com/HamzaOukach/ChessMate.git
+cd ChessMate
+```
 
 ---
 
