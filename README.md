@@ -1,4 +1,4 @@
-`````markdown
+
 # README – Installation & Setup
 
 This document describes, in order, the steps to prepare the environment, build the images, and launch the application.
@@ -213,4 +213,4 @@ https://traefik.docker.localhost (Traefik URL in dev)
    ```bash
   docker compose exec postgres psql -U chessmate -d chessmate
   ```
-`````
+
