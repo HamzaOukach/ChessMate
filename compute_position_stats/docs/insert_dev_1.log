@@ -1,0 +1,1361 @@
+chessmate@debian ~/chessmate (AD)> docker logs 336b885466d73553d3e5faeb17c7800d5538ea0cbcd7b44ca5b3fb13e606e1a0
+1,000 parties traitées, 61,859 positions vues, 4.9s écoulées
+Flushed 100,063 positions vers Position_Stats
+2,000 parties traitées, 124,248 positions vues, 12.7s écoulées
+3,000 parties traitées, 185,981 positions vues, 16.4s écoulées
+Flushed 100,087 positions vers Position_Stats
+4,000 parties traitées, 248,163 positions vues, 24.8s écoulées
+5,000 parties traitées, 310,887 positions vues, 28.6s écoulées
+Flushed 100,069 positions vers Position_Stats
+6,000 parties traitées, 371,786 positions vues, 36.3s écoulées
+7,000 parties traitées, 433,134 positions vues, 40.0s écoulées
+Flushed 100,032 positions vers Position_Stats
+8,000 parties traitées, 496,813 positions vues, 47.8s écoulées
+Flushed 100,009 positions vers Position_Stats
+9,000 parties traitées, 559,617 positions vues, 56.0s écoulées
+10,000 parties traitées, 622,148 positions vues, 60.2s écoulées
+Flushed 100,002 positions vers Position_Stats
+11,000 parties traitées, 685,703 positions vues, 69.4s écoulées
+12,000 parties traitées, 750,765 positions vues, 73.3s écoulées
+Flushed 100,004 positions vers Position_Stats
+13,000 parties traitées, 813,054 positions vues, 80.9s écoulées
+Flushed 100,009 positions vers Position_Stats
+14,000 parties traitées, 876,609 positions vues, 88.0s écoulées
+15,000 parties traitées, 939,898 positions vues, 92.3s écoulées
+Flushed 100,060 positions vers Position_Stats
+16,000 parties traitées, 1,002,912 positions vues, 99.8s écoulées
+17,000 parties traitées, 1,065,831 positions vues, 103.7s écoulées
+Flushed 100,050 positions vers Position_Stats
+18,000 parties traitées, 1,128,861 positions vues, 111.3s écoulées
+19,000 parties traitées, 1,193,437 positions vues, 115.1s écoulées
+Flushed 100,048 positions vers Position_Stats
+20,000 parties traitées, 1,256,114 positions vues, 124.1s écoulées
+Flushed 100,025 positions vers Position_Stats
+21,000 parties traitées, 1,318,805 positions vues, 133.4s écoulées
+22,000 parties traitées, 1,381,421 positions vues, 138.9s écoulées
+Flushed 100,038 positions vers Position_Stats
+23,000 parties traitées, 1,443,653 positions vues, 147.2s écoulées
+24,000 parties traitées, 1,506,093 positions vues, 151.0s écoulées
+Flushed 100,011 positions vers Position_Stats
+25,000 parties traitées, 1,568,877 positions vues, 159.0s écoulées
+26,000 parties traitées, 1,631,925 positions vues, 162.8s écoulées
+Flushed 100,025 positions vers Position_Stats
+27,000 parties traitées, 1,694,954 positions vues, 171.7s écoulées
+Flushed 100,016 positions vers Position_Stats
+28,000 parties traitées, 1,757,049 positions vues, 179.5s écoulées
+29,000 parties traitées, 1,820,747 positions vues, 183.9s écoulées
+Flushed 100,072 positions vers Position_Stats
+30,000 parties traitées, 1,884,349 positions vues, 191.9s écoulées
+31,000 parties traitées, 1,947,748 positions vues, 196.3s écoulées
+Flushed 100,014 positions vers Position_Stats
+32,000 parties traitées, 2,012,638 positions vues, 204.2s écoulées
+33,000 parties traitées, 2,077,056 positions vues, 208.1s écoulées
+Flushed 100,015 positions vers Position_Stats
+34,000 parties traitées, 2,141,408 positions vues, 216.8s écoulées
+Flushed 100,009 positions vers Position_Stats
+35,000 parties traitées, 2,204,091 positions vues, 225.2s écoulées
+36,000 parties traitées, 2,267,446 positions vues, 229.0s écoulées
+Flushed 100,015 positions vers Position_Stats
+37,000 parties traitées, 2,330,102 positions vues, 237.3s écoulées
+38,000 parties traitées, 2,395,965 positions vues, 241.2s écoulées
+Flushed 100,023 positions vers Position_Stats
+39,000 parties traitées, 2,458,287 positions vues, 249.2s écoulées
+Flushed 100,053 positions vers Position_Stats
+40,000 parties traitées, 2,519,982 positions vues, 257.7s écoulées
+41,000 parties traitées, 2,582,283 positions vues, 263.8s écoulées
+Flushed 100,018 positions vers Position_Stats
+42,000 parties traitées, 2,645,554 positions vues, 273.5s écoulées
+43,000 parties traitées, 2,707,872 positions vues, 278.8s écoulées
+Flushed 100,014 positions vers Position_Stats
+44,000 parties traitées, 2,770,275 positions vues, 286.7s écoulées
+45,000 parties traitées, 2,831,825 positions vues, 290.4s écoulées
+Flushed 100,024 positions vers Position_Stats
+46,000 parties traitées, 2,895,361 positions vues, 298.9s écoulées
+Flushed 100,037 positions vers Position_Stats
+47,000 parties traitées, 2,957,712 positions vues, 308.0s écoulées
+48,000 parties traitées, 3,020,955 positions vues, 313.5s écoulées
+Flushed 100,043 positions vers Position_Stats
+49,000 parties traitées, 3,082,877 positions vues, 322.5s écoulées
+50,000 parties traitées, 3,144,779 positions vues, 326.2s écoulées
+Flushed 100,014 positions vers Position_Stats
+51,000 parties traitées, 3,209,127 positions vues, 335.6s écoulées
+52,000 parties traitées, 3,272,404 positions vues, 339.4s écoulées
+Flushed 100,020 positions vers Position_Stats
+53,000 parties traitées, 3,335,285 positions vues, 348.0s écoulées
+Flushed 100,036 positions vers Position_Stats
+54,000 parties traitées, 3,397,973 positions vues, 355.8s écoulées
+55,000 parties traitées, 3,461,277 positions vues, 359.9s écoulées
+Flushed 100,021 positions vers Position_Stats
+56,000 parties traitées, 3,524,070 positions vues, 368.4s écoulées
+57,000 parties traitées, 3,585,437 positions vues, 372.1s écoulées
+Flushed 100,002 positions vers Position_Stats
+58,000 parties traitées, 3,648,792 positions vues, 380.6s écoulées
+59,000 parties traitées, 3,712,022 positions vues, 385.2s écoulées
+Flushed 100,001 positions vers Position_Stats
+60,000 parties traitées, 3,774,468 positions vues, 393.4s écoulées
+Flushed 100,055 positions vers Position_Stats
+61,000 parties traitées, 3,837,252 positions vues, 401.7s écoulées
+62,000 parties traitées, 3,900,106 positions vues, 405.8s écoulées
+Flushed 100,006 positions vers Position_Stats
+63,000 parties traitées, 3,962,629 positions vues, 415.2s écoulées
+64,000 parties traitées, 4,026,726 positions vues, 419.0s écoulées
+Flushed 100,041 positions vers Position_Stats
+65,000 parties traitées, 4,090,381 positions vues, 427.4s écoulées
+66,000 parties traitées, 4,154,736 positions vues, 431.3s écoulées
+Flushed 100,037 positions vers Position_Stats
+67,000 parties traitées, 4,216,046 positions vues, 439.7s écoulées
+Flushed 100,028 positions vers Position_Stats
+68,000 parties traitées, 4,279,894 positions vues, 447.8s écoulées
+69,000 parties traitées, 4,343,607 positions vues, 452.0s écoulées
+Flushed 100,008 positions vers Position_Stats
+70,000 parties traitées, 4,406,865 positions vues, 460.6s écoulées
+71,000 parties traitées, 4,467,759 positions vues, 464.9s écoulées
+Flushed 100,002 positions vers Position_Stats
+72,000 parties traitées, 4,529,942 positions vues, 473.0s écoulées
+73,000 parties traitées, 4,592,038 positions vues, 476.8s écoulées
+Flushed 100,052 positions vers Position_Stats
+74,000 parties traitées, 4,655,485 positions vues, 486.1s écoulées
+Flushed 100,033 positions vers Position_Stats
+75,000 parties traitées, 4,719,259 positions vues, 492.7s écoulées
+76,000 parties traitées, 4,782,343 positions vues, 496.5s écoulées
+Flushed 100,018 positions vers Position_Stats
+77,000 parties traitées, 4,844,761 positions vues, 505.9s écoulées
+78,000 parties traitées, 4,908,775 positions vues, 509.7s écoulées
+Flushed 100,000 positions vers Position_Stats
+79,000 parties traitées, 4,971,226 positions vues, 518.7s écoulées
+80,000 parties traitées, 5,035,210 positions vues, 522.6s écoulées
+Flushed 100,016 positions vers Position_Stats
+81,000 parties traitées, 5,097,095 positions vues, 531.8s écoulées
+Flushed 100,018 positions vers Position_Stats
+82,000 parties traitées, 5,158,090 positions vues, 540.1s écoulées
+83,000 parties traitées, 5,220,736 positions vues, 544.0s écoulées
+Flushed 100,048 positions vers Position_Stats
+84,000 parties traitées, 5,283,347 positions vues, 554.1s écoulées
+85,000 parties traitées, 5,346,230 positions vues, 557.9s écoulées
+Flushed 100,049 positions vers Position_Stats
+86,000 parties traitées, 5,407,190 positions vues, 566.4s écoulées
+87,000 parties traitées, 5,469,931 positions vues, 570.2s écoulées
+Flushed 100,038 positions vers Position_Stats
+88,000 parties traitées, 5,531,910 positions vues, 578.0s écoulées
+Flushed 100,037 positions vers Position_Stats
+89,000 parties traitées, 5,594,275 positions vues, 586.0s écoulées
+90,000 parties traitées, 5,658,063 positions vues, 591.3s écoulées
+Flushed 100,021 positions vers Position_Stats
+91,000 parties traitées, 5,721,737 positions vues, 601.1s écoulées
+92,000 parties traitées, 5,784,943 positions vues, 604.8s écoulées
+Flushed 100,027 positions vers Position_Stats
+93,000 parties traitées, 5,848,042 positions vues, 613.4s écoulées
+94,000 parties traitées, 5,911,954 positions vues, 617.2s écoulées
+Flushed 100,002 positions vers Position_Stats
+95,000 parties traitées, 5,975,821 positions vues, 625.9s écoulées
+Flushed 100,035 positions vers Position_Stats
+96,000 parties traitées, 6,037,951 positions vues, 634.7s écoulées
+97,000 parties traitées, 6,100,823 positions vues, 639.2s écoulées
+Flushed 100,011 positions vers Position_Stats
+98,000 parties traitées, 6,163,253 positions vues, 648.2s écoulées
+99,000 parties traitées, 6,227,550 positions vues, 652.1s écoulées
+Flushed 100,047 positions vers Position_Stats
+100,000 parties traitées, 6,289,860 positions vues, 660.3s écoulées
+101,000 parties traitées, 6,352,332 positions vues, 666.1s écoulées
+Flushed 100,009 positions vers Position_Stats
+102,000 parties traitées, 6,415,039 positions vues, 674.7s écoulées
+Flushed 100,016 positions vers Position_Stats
+103,000 parties traitées, 6,478,254 positions vues, 683.6s écoulées
+104,000 parties traitées, 6,540,494 positions vues, 689.1s écoulées
+Flushed 100,067 positions vers Position_Stats
+105,000 parties traitées, 6,604,237 positions vues, 698.1s écoulées
+106,000 parties traitées, 6,667,019 positions vues, 702.0s écoulées
+Flushed 100,004 positions vers Position_Stats
+107,000 parties traitées, 6,729,018 positions vues, 711.0s écoulées
+Flushed 100,023 positions vers Position_Stats
+108,000 parties traitées, 6,791,880 positions vues, 719.7s écoulées
+109,000 parties traitées, 6,855,409 positions vues, 724.4s écoulées
+Flushed 100,044 positions vers Position_Stats
+110,000 parties traitées, 6,918,791 positions vues, 734.1s écoulées
+111,000 parties traitées, 6,980,544 positions vues, 738.6s écoulées
+Flushed 100,017 positions vers Position_Stats
+112,000 parties traitées, 7,043,591 positions vues, 748.7s écoulées
+113,000 parties traitées, 7,106,170 positions vues, 752.5s écoulées
+Flushed 100,124 positions vers Position_Stats
+114,000 parties traitées, 7,169,510 positions vues, 762.3s écoulées
+Flushed 100,001 positions vers Position_Stats
+115,000 parties traitées, 7,231,095 positions vues, 770.3s écoulées
+116,000 parties traitées, 7,293,701 positions vues, 774.8s écoulées
+Flushed 100,050 positions vers Position_Stats
+117,000 parties traitées, 7,357,532 positions vues, 783.6s écoulées
+118,000 parties traitées, 7,420,539 positions vues, 787.4s écoulées
+Flushed 100,044 positions vers Position_Stats
+119,000 parties traitées, 7,484,249 positions vues, 796.3s écoulées
+120,000 parties traitées, 7,546,495 positions vues, 800.1s écoulées
+Flushed 100,050 positions vers Position_Stats
+121,000 parties traitées, 7,609,822 positions vues, 809.5s écoulées
+Flushed 100,031 positions vers Position_Stats
+122,000 parties traitées, 7,673,726 positions vues, 819.1s écoulées
+123,000 parties traitées, 7,736,536 positions vues, 823.3s écoulées
+Flushed 100,014 positions vers Position_Stats
+124,000 parties traitées, 7,800,005 positions vues, 832.9s écoulées
+125,000 parties traitées, 7,862,634 positions vues, 837.8s écoulées
+Flushed 100,071 positions vers Position_Stats
+126,000 parties traitées, 7,926,215 positions vues, 848.2s écoulées
+127,000 parties traitées, 7,990,166 positions vues, 852.2s écoulées
+Flushed 100,049 positions vers Position_Stats
+128,000 parties traitées, 8,052,841 positions vues, 862.0s écoulées
+Flushed 100,019 positions vers Position_Stats
+129,000 parties traitées, 8,116,735 positions vues, 870.7s écoulées
+130,000 parties traitées, 8,180,442 positions vues, 874.6s écoulées
+Flushed 100,003 positions vers Position_Stats
+131,000 parties traitées, 8,243,589 positions vues, 883.7s écoulées
+132,000 parties traitées, 8,305,978 positions vues, 887.5s écoulées
+Flushed 100,007 positions vers Position_Stats
+133,000 parties traitées, 8,369,182 positions vues, 898.3s écoulées
+134,000 parties traitées, 8,432,105 positions vues, 902.0s écoulées
+Flushed 100,023 positions vers Position_Stats
+135,000 parties traitées, 8,494,301 positions vues, 910.9s écoulées
+Flushed 100,054 positions vers Position_Stats
+136,000 parties traitées, 8,558,047 positions vues, 920.5s écoulées
+137,000 parties traitées, 8,620,915 positions vues, 924.4s écoulées
+Flushed 100,023 positions vers Position_Stats
+138,000 parties traitées, 8,683,770 positions vues, 935.0s écoulées
+139,000 parties traitées, 8,746,738 positions vues, 939.0s écoulées
+Flushed 100,033 positions vers Position_Stats
+140,000 parties traitées, 8,809,876 positions vues, 949.8s écoulées
+Flushed 100,021 positions vers Position_Stats
+141,000 parties traitées, 8,874,135 positions vues, 959.5s écoulées
+142,000 parties traitées, 8,936,020 positions vues, 964.4s écoulées
+Flushed 100,025 positions vers Position_Stats
+143,000 parties traitées, 8,998,280 positions vues, 973.4s écoulées
+144,000 parties traitées, 9,059,668 positions vues, 977.3s écoulées
+Flushed 100,041 positions vers Position_Stats
+145,000 parties traitées, 9,123,054 positions vues, 986.2s écoulées
+146,000 parties traitées, 9,186,249 positions vues, 990.3s écoulées
+Flushed 100,039 positions vers Position_Stats
+147,000 parties traitées, 9,248,332 positions vues, 1000.1s écoulées
+Flushed 100,018 positions vers Position_Stats
+148,000 parties traitées, 9,310,686 positions vues, 1009.6s écoulées
+149,000 parties traitées, 9,372,163 positions vues, 1014.2s écoulées
+Flushed 100,013 positions vers Position_Stats
+150,000 parties traitées, 9,434,877 positions vues, 1024.0s écoulées
+151,000 parties traitées, 9,497,195 positions vues, 1028.5s écoulées
+Flushed 100,024 positions vers Position_Stats
+152,000 parties traitées, 9,560,282 positions vues, 1037.8s écoulées
+153,000 parties traitées, 9,622,913 positions vues, 1041.8s écoulées
+Flushed 100,036 positions vers Position_Stats
+154,000 parties traitées, 9,685,519 positions vues, 1050.5s écoulées
+Flushed 100,013 positions vers Position_Stats
+155,000 parties traitées, 9,748,691 positions vues, 1058.8s écoulées
+156,000 parties traitées, 9,809,556 positions vues, 1063.3s écoulées
+Flushed 100,118 positions vers Position_Stats
+157,000 parties traitées, 9,872,045 positions vues, 1074.0s écoulées
+158,000 parties traitées, 9,935,370 positions vues, 1078.0s écoulées
+Flushed 100,052 positions vers Position_Stats
+159,000 parties traitées, 9,998,411 positions vues, 1088.0s écoulées
+160,000 parties traitées, 10,062,231 positions vues, 1092.3s écoulées
+Flushed 100,023 positions vers Position_Stats
+161,000 parties traitées, 10,124,293 positions vues, 1103.4s écoulées
+Flushed 100,019 positions vers Position_Stats
+162,000 parties traitées, 10,187,667 positions vues, 1112.7s écoulées
+163,000 parties traitées, 10,250,158 positions vues, 1117.5s écoulées
+Flushed 100,048 positions vers Position_Stats
+164,000 parties traitées, 10,312,384 positions vues, 1128.2s écoulées
+165,000 parties traitées, 10,376,596 positions vues, 1134.2s écoulées
+Flushed 100,096 positions vers Position_Stats
+166,000 parties traitées, 10,439,317 positions vues, 1143.4s écoulées
+167,000 parties traitées, 10,502,373 positions vues, 1147.4s écoulées
+Flushed 100,056 positions vers Position_Stats
+168,000 parties traitées, 10,564,307 positions vues, 1157.6s écoulées
+Flushed 100,016 positions vers Position_Stats
+169,000 parties traitées, 10,627,244 positions vues, 1166.6s écoulées
+170,000 parties traitées, 10,688,645 positions vues, 1171.0s écoulées
+Flushed 100,053 positions vers Position_Stats
+171,000 parties traitées, 10,751,437 positions vues, 1180.2s écoulées
+172,000 parties traitées, 10,814,783 positions vues, 1184.2s écoulées
+Flushed 100,013 positions vers Position_Stats
+173,000 parties traitées, 10,877,921 positions vues, 1193.7s écoulées
+174,000 parties traitées, 10,939,420 positions vues, 1197.6s écoulées
+Flushed 100,018 positions vers Position_Stats
+175,000 parties traitées, 11,003,674 positions vues, 1206.5s écoulées
+Flushed 100,066 positions vers Position_Stats
+176,000 parties traitées, 11,065,671 positions vues, 1215.1s écoulées
+177,000 parties traitées, 11,128,757 positions vues, 1220.8s écoulées
+Flushed 100,045 positions vers Position_Stats
+178,000 parties traitées, 11,191,141 positions vues, 1230.3s écoulées
+179,000 parties traitées, 11,255,059 positions vues, 1234.3s écoulées
+Flushed 100,066 positions vers Position_Stats
+180,000 parties traitées, 11,316,638 positions vues, 1244.5s écoulées
+181,000 parties traitées, 11,379,597 positions vues, 1248.7s écoulées
+Flushed 100,034 positions vers Position_Stats
+182,000 parties traitées, 11,444,325 positions vues, 1258.9s écoulées
+Flushed 100,086 positions vers Position_Stats
+183,000 parties traitées, 11,506,879 positions vues, 1268.3s écoulées
+184,000 parties traitées, 11,570,405 positions vues, 1272.7s écoulées
+Flushed 100,034 positions vers Position_Stats
+185,000 parties traitées, 11,632,919 positions vues, 1282.6s écoulées
+186,000 parties traitées, 11,695,847 positions vues, 1287.0s écoulées
+Flushed 100,056 positions vers Position_Stats
+187,000 parties traitées, 11,760,561 positions vues, 1297.2s écoulées
+188,000 parties traitées, 11,822,806 positions vues, 1301.2s écoulées
+Flushed 100,008 positions vers Position_Stats
+189,000 parties traitées, 11,884,859 positions vues, 1311.2s écoulées
+Flushed 100,014 positions vers Position_Stats
+190,000 parties traitées, 11,945,836 positions vues, 1323.3s écoulées
+191,000 parties traitées, 12,008,721 positions vues, 1328.5s écoulées
+Flushed 100,005 positions vers Position_Stats
+192,000 parties traitées, 12,071,756 positions vues, 1338.4s écoulées
+193,000 parties traitées, 12,135,076 positions vues, 1342.4s écoulées
+Flushed 100,027 positions vers Position_Stats
+194,000 parties traitées, 12,199,545 positions vues, 1352.8s écoulées
+195,000 parties traitées, 12,262,758 positions vues, 1357.6s écoulées
+Flushed 100,023 positions vers Position_Stats
+196,000 parties traitées, 12,325,003 positions vues, 1368.4s écoulées
+Flushed 100,022 positions vers Position_Stats
+197,000 parties traitées, 12,388,203 positions vues, 1378.5s écoulées
+198,000 parties traitées, 12,450,382 positions vues, 1382.6s écoulées
+Flushed 100,014 positions vers Position_Stats
+199,000 parties traitées, 12,513,154 positions vues, 1392.5s écoulées
+200,000 parties traitées, 12,576,752 positions vues, 1396.5s écoulées
+Flushed 100,004 positions vers Position_Stats
+201,000 parties traitées, 12,640,172 positions vues, 1405.8s écoulées
+202,000 parties traitées, 12,702,249 positions vues, 1409.7s écoulées
+Flushed 100,026 positions vers Position_Stats
+203,000 parties traitées, 12,764,576 positions vues, 1419.6s écoulées
+Flushed 100,027 positions vers Position_Stats
+204,000 parties traitées, 12,828,146 positions vues, 1428.8s écoulées
+205,000 parties traitées, 12,889,961 positions vues, 1432.8s écoulées
+Flushed 100,053 positions vers Position_Stats
+206,000 parties traitées, 12,953,819 positions vues, 1442.3s écoulées
+207,000 parties traitées, 13,015,614 positions vues, 1446.2s écoulées
+Flushed 100,025 positions vers Position_Stats
+208,000 parties traitées, 13,078,317 positions vues, 1456.6s écoulées
+209,000 parties traitées, 13,140,085 positions vues, 1461.1s écoulées
+Flushed 100,008 positions vers Position_Stats
+210,000 parties traitées, 13,203,422 positions vues, 1469.8s écoulées
+Flushed 100,012 positions vers Position_Stats
+211,000 parties traitées, 13,267,208 positions vues, 1479.6s écoulées
+212,000 parties traitées, 13,329,887 positions vues, 1484.3s écoulées
+Flushed 100,014 positions vers Position_Stats
+213,000 parties traitées, 13,394,049 positions vues, 1494.5s écoulées
+214,000 parties traitées, 13,457,382 positions vues, 1498.3s écoulées
+Flushed 100,017 positions vers Position_Stats
+215,000 parties traitées, 13,520,824 positions vues, 1508.0s écoulées
+Flushed 100,063 positions vers Position_Stats
+216,000 parties traitées, 13,583,171 positions vues, 1516.7s écoulées
+217,000 parties traitées, 13,646,642 positions vues, 1521.1s écoulées
+Flushed 100,041 positions vers Position_Stats
+218,000 parties traitées, 13,709,031 positions vues, 1530.7s écoulées
+219,000 parties traitées, 13,772,409 positions vues, 1534.8s écoulées
+Flushed 100,047 positions vers Position_Stats
+220,000 parties traitées, 13,835,798 positions vues, 1544.8s écoulées
+221,000 parties traitées, 13,898,860 positions vues, 1550.7s écoulées
+Flushed 100,049 positions vers Position_Stats
+222,000 parties traitées, 13,963,005 positions vues, 1562.4s écoulées
+Flushed 100,017 positions vers Position_Stats
+223,000 parties traitées, 14,026,226 positions vues, 1572.4s écoulées
+224,000 parties traitées, 14,090,352 positions vues, 1578.6s écoulées
+Flushed 100,087 positions vers Position_Stats
+225,000 parties traitées, 14,154,676 positions vues, 1590.2s écoulées
+226,000 parties traitées, 14,217,442 positions vues, 1594.1s écoulées
+Flushed 100,045 positions vers Position_Stats
+227,000 parties traitées, 14,279,846 positions vues, 1604.2s écoulées
+228,000 parties traitées, 14,343,044 positions vues, 1608.2s écoulées
+Flushed 100,049 positions vers Position_Stats
+229,000 parties traitées, 14,405,821 positions vues, 1618.6s écoulées
+Flushed 100,000 positions vers Position_Stats
+230,000 parties traitées, 14,470,190 positions vues, 1628.2s écoulées
+231,000 parties traitées, 14,532,564 positions vues, 1633.3s écoulées
+Flushed 100,028 positions vers Position_Stats
+232,000 parties traitées, 14,596,448 positions vues, 1644.7s écoulées
+233,000 parties traitées, 14,657,775 positions vues, 1648.6s écoulées
+Flushed 100,030 positions vers Position_Stats
+234,000 parties traitées, 14,721,048 positions vues, 1658.3s écoulées
+235,000 parties traitées, 14,783,859 positions vues, 1662.2s écoulées
+Flushed 100,008 positions vers Position_Stats
+236,000 parties traitées, 14,846,808 positions vues, 1671.9s écoulées
+Flushed 100,023 positions vers Position_Stats
+237,000 parties traitées, 14,912,077 positions vues, 1682.4s écoulées
+238,000 parties traitées, 14,974,059 positions vues, 1686.4s écoulées
+Flushed 100,036 positions vers Position_Stats
+239,000 parties traitées, 15,038,335 positions vues, 1696.2s écoulées
+240,000 parties traitées, 15,101,076 positions vues, 1701.0s écoulées
+Flushed 100,038 positions vers Position_Stats
+241,000 parties traitées, 15,163,391 positions vues, 1711.4s écoulées
+Flushed 100,063 positions vers Position_Stats
+242,000 parties traitées, 15,225,618 positions vues, 1722.2s écoulées
+243,000 parties traitées, 15,290,428 positions vues, 1726.6s écoulées
+Flushed 100,033 positions vers Position_Stats
+244,000 parties traitées, 15,353,767 positions vues, 1736.6s écoulées
+245,000 parties traitées, 15,416,637 positions vues, 1740.5s écoulées
+Flushed 100,047 positions vers Position_Stats
+246,000 parties traitées, 15,479,830 positions vues, 1751.1s écoulées
+247,000 parties traitées, 15,543,079 positions vues, 1754.9s écoulées
+Flushed 100,025 positions vers Position_Stats
+248,000 parties traitées, 15,606,346 positions vues, 1765.9s écoulées
+Flushed 100,043 positions vers Position_Stats
+249,000 parties traitées, 15,669,286 positions vues, 1775.3s écoulées
+250,000 parties traitées, 15,733,475 positions vues, 1779.4s écoulées
+Flushed 100,067 positions vers Position_Stats
+251,000 parties traitées, 15,797,507 positions vues, 1789.2s écoulées
+252,000 parties traitées, 15,859,925 positions vues, 1792.9s écoulées
+Flushed 100,019 positions vers Position_Stats
+253,000 parties traitées, 15,922,525 positions vues, 1803.1s écoulées
+254,000 parties traitées, 15,985,453 positions vues, 1806.9s écoulées
+Flushed 100,058 positions vers Position_Stats
+255,000 parties traitées, 16,047,988 positions vues, 1818.9s écoulées
+Flushed 100,067 positions vers Position_Stats
+256,000 parties traitées, 16,112,854 positions vues, 1830.6s écoulées
+257,000 parties traitées, 16,176,262 positions vues, 1835.4s écoulées
+Flushed 100,038 positions vers Position_Stats
+258,000 parties traitées, 16,240,142 positions vues, 1846.0s écoulées
+259,000 parties traitées, 16,302,845 positions vues, 1849.8s écoulées
+Flushed 100,030 positions vers Position_Stats
+260,000 parties traitées, 16,365,723 positions vues, 1859.7s écoulées
+Flushed 100,032 positions vers Position_Stats
+261,000 parties traitées, 16,428,742 positions vues, 1869.3s écoulées
+262,000 parties traitées, 16,492,659 positions vues, 1873.7s écoulées
+Flushed 100,095 positions vers Position_Stats
+263,000 parties traitées, 16,556,089 positions vues, 1883.2s écoulées
+264,000 parties traitées, 16,619,184 positions vues, 1886.9s écoulées
+Flushed 100,015 positions vers Position_Stats
+265,000 parties traitées, 16,683,017 positions vues, 1896.2s écoulées
+266,000 parties traitées, 16,747,282 positions vues, 1900.0s écoulées
+Flushed 100,028 positions vers Position_Stats
+267,000 parties traitées, 16,810,656 positions vues, 1910.4s écoulées
+Flushed 100,108 positions vers Position_Stats
+268,000 parties traitées, 16,873,799 positions vues, 1921.6s écoulées
+269,000 parties traitées, 16,937,058 positions vues, 1925.9s écoulées
+Flushed 100,021 positions vers Position_Stats
+270,000 parties traitées, 16,999,789 positions vues, 1938.4s écoulées
+271,000 parties traitées, 17,061,848 positions vues, 1944.1s écoulées
+Flushed 100,003 positions vers Position_Stats
+272,000 parties traitées, 17,126,217 positions vues, 1954.9s écoulées
+273,000 parties traitées, 17,190,810 positions vues, 1958.8s écoulées
+Flushed 100,020 positions vers Position_Stats
+274,000 parties traitées, 17,253,098 positions vues, 1969.7s écoulées
+Flushed 100,025 positions vers Position_Stats
+275,000 parties traitées, 17,315,441 positions vues, 1980.9s écoulées
+276,000 parties traitées, 17,377,195 positions vues, 1987.0s écoulées
+Flushed 100,086 positions vers Position_Stats
+277,000 parties traitées, 17,441,625 positions vues, 1997.0s écoulées
+278,000 parties traitées, 17,504,488 positions vues, 2000.8s écoulées
+Flushed 100,027 positions vers Position_Stats
+279,000 parties traitées, 17,570,019 positions vues, 2011.9s écoulées
+Flushed 100,074 positions vers Position_Stats
+280,000 parties traitées, 17,633,197 positions vues, 2022.9s écoulées
+281,000 parties traitées, 17,696,790 positions vues, 2028.3s écoulées
+Flushed 100,005 positions vers Position_Stats
+282,000 parties traitées, 17,761,234 positions vues, 2039.3s écoulées
+283,000 parties traitées, 17,823,948 positions vues, 2043.1s écoulées
+Flushed 100,000 positions vers Position_Stats
+284,000 parties traitées, 17,887,382 positions vues, 2054.2s écoulées
+285,000 parties traitées, 17,950,758 positions vues, 2058.0s écoulées
+Flushed 100,024 positions vers Position_Stats
+286,000 parties traitées, 18,012,033 positions vues, 2070.5s écoulées
+Flushed 100,035 positions vers Position_Stats
+287,000 parties traitées, 18,075,853 positions vues, 2082.2s écoulées
+288,000 parties traitées, 18,139,220 positions vues, 2086.4s écoulées
+Flushed 100,001 positions vers Position_Stats
+289,000 parties traitées, 18,201,753 positions vues, 2097.9s écoulées
+290,000 parties traitées, 18,266,163 positions vues, 2101.8s écoulées
+Flushed 100,026 positions vers Position_Stats
+291,000 parties traitées, 18,330,248 positions vues, 2114.0s écoulées
+292,000 parties traitées, 18,394,465 positions vues, 2118.5s écoulées
+Flushed 100,021 positions vers Position_Stats
+293,000 parties traitées, 18,458,260 positions vues, 2129.8s écoulées
+Flushed 100,040 positions vers Position_Stats
+294,000 parties traitées, 18,523,168 positions vues, 2141.2s écoulées
+295,000 parties traitées, 18,586,170 positions vues, 2145.0s écoulées
+Flushed 100,015 positions vers Position_Stats
+296,000 parties traitées, 18,650,644 positions vues, 2155.4s écoulées
+297,000 parties traitées, 18,714,586 positions vues, 2159.2s écoulées
+Flushed 100,087 positions vers Position_Stats
+298,000 parties traitées, 18,779,315 positions vues, 2171.0s écoulées
+Flushed 100,029 positions vers Position_Stats
+299,000 parties traitées, 18,845,374 positions vues, 2185.1s écoulées
+300,000 parties traitées, 18,907,988 positions vues, 2190.1s écoulées
+Flushed 100,068 positions vers Position_Stats
+301,000 parties traitées, 18,970,997 positions vues, 2201.8s écoulées
+302,000 parties traitées, 19,034,928 positions vues, 2205.6s écoulées
+Flushed 100,041 positions vers Position_Stats
+303,000 parties traitées, 19,099,703 positions vues, 2217.0s écoulées
+Flushed 100,054 positions vers Position_Stats
+304,000 parties traitées, 19,163,764 positions vues, 2228.6s écoulées
+305,000 parties traitées, 19,226,526 positions vues, 2232.4s écoulées
+Flushed 100,017 positions vers Position_Stats
+306,000 parties traitées, 19,290,104 positions vues, 2244.1s écoulées
+307,000 parties traitées, 19,353,187 positions vues, 2247.9s écoulées
+Flushed 100,048 positions vers Position_Stats
+308,000 parties traitées, 19,416,926 positions vues, 2257.5s écoulées
+309,000 parties traitées, 19,479,718 positions vues, 2261.2s écoulées
+Flushed 100,033 positions vers Position_Stats
+310,000 parties traitées, 19,544,053 positions vues, 2272.9s écoulées
+Flushed 100,018 positions vers Position_Stats
+311,000 parties traitées, 19,607,273 positions vues, 2284.4s écoulées
+312,000 parties traitées, 19,672,223 positions vues, 2288.7s écoulées
+Flushed 100,053 positions vers Position_Stats
+313,000 parties traitées, 19,735,162 positions vues, 2299.5s écoulées
+314,000 parties traitées, 19,800,025 positions vues, 2303.4s écoulées
+Flushed 100,010 positions vers Position_Stats
+315,000 parties traitées, 19,865,073 positions vues, 2314.6s écoulées
+Flushed 100,039 positions vers Position_Stats
+316,000 parties traitées, 19,929,567 positions vues, 2325.6s écoulées
+317,000 parties traitées, 19,992,839 positions vues, 2330.7s écoulées
+Flushed 100,053 positions vers Position_Stats
+318,000 parties traitées, 20,057,387 positions vues, 2344.4s écoulées
+319,000 parties traitées, 20,120,898 positions vues, 2350.5s écoulées
+Flushed 100,050 positions vers Position_Stats
+320,000 parties traitées, 20,186,433 positions vues, 2363.6s écoulées
+321,000 parties traitées, 20,251,771 positions vues, 2368.5s écoulées
+Flushed 100,060 positions vers Position_Stats
+322,000 parties traitées, 20,314,203 positions vues, 2379.9s écoulées
+Flushed 100,033 positions vers Position_Stats
+323,000 parties traitées, 20,377,505 positions vues, 2391.8s écoulées
+324,000 parties traitées, 20,441,708 positions vues, 2395.7s écoulées
+Flushed 100,021 positions vers Position_Stats
+325,000 parties traitées, 20,507,147 positions vues, 2407.6s écoulées
+326,000 parties traitées, 20,569,815 positions vues, 2411.5s écoulées
+Flushed 100,051 positions vers Position_Stats
+327,000 parties traitées, 20,633,400 positions vues, 2423.6s écoulées
+Flushed 100,066 positions vers Position_Stats
+328,000 parties traitées, 20,696,768 positions vues, 2435.7s écoulées
+329,000 parties traitées, 20,760,349 positions vues, 2439.8s écoulées
+Flushed 100,041 positions vers Position_Stats
+330,000 parties traitées, 20,824,450 positions vues, 2452.3s écoulées
+331,000 parties traitées, 20,887,782 positions vues, 2456.4s écoulées
+Flushed 100,074 positions vers Position_Stats
+332,000 parties traitées, 20,952,073 positions vues, 2469.3s écoulées
+333,000 parties traitées, 21,015,319 positions vues, 2473.2s écoulées
+Flushed 100,023 positions vers Position_Stats
+334,000 parties traitées, 21,079,283 positions vues, 2487.9s écoulées
+Flushed 100,048 positions vers Position_Stats
+335,000 parties traitées, 21,144,465 positions vues, 2502.5s écoulées
+336,000 parties traitées, 21,207,729 positions vues, 2506.4s écoulées
+Flushed 100,022 positions vers Position_Stats
+337,000 parties traitées, 21,270,418 positions vues, 2519.0s écoulées
+338,000 parties traitées, 21,332,148 positions vues, 2522.7s écoulées
+Flushed 100,054 positions vers Position_Stats
+339,000 parties traitées, 21,395,047 positions vues, 2536.7s écoulées
+Flushed 100,015 positions vers Position_Stats
+340,000 parties traitées, 21,461,078 positions vues, 2549.5s écoulées
+341,000 parties traitées, 21,525,937 positions vues, 2554.2s écoulées
+Flushed 100,008 positions vers Position_Stats
+342,000 parties traitées, 21,588,095 positions vues, 2569.2s écoulées
+343,000 parties traitées, 21,651,058 positions vues, 2575.0s écoulées
+Flushed 100,106 positions vers Position_Stats
+344,000 parties traitées, 21,716,266 positions vues, 2591.1s écoulées
+345,000 parties traitées, 21,779,648 positions vues, 2594.9s écoulées
+Flushed 100,008 positions vers Position_Stats
+346,000 parties traitées, 21,845,015 positions vues, 2608.8s écoulées
+Flushed 100,071 positions vers Position_Stats
+347,000 parties traitées, 21,908,006 positions vues, 2624.1s écoulées
+348,000 parties traitées, 21,971,125 positions vues, 2628.7s écoulées
+Flushed 100,036 positions vers Position_Stats
+349,000 parties traitées, 22,033,944 positions vues, 2642.9s écoulées
+350,000 parties traitées, 22,098,450 positions vues, 2646.7s écoulées
+Flushed 100,061 positions vers Position_Stats
+351,000 parties traitées, 22,161,462 positions vues, 2663.3s écoulées
+Flushed 100,026 positions vers Position_Stats
+352,000 parties traitées, 22,226,513 positions vues, 2678.3s écoulées
+353,000 parties traitées, 22,291,279 positions vues, 2683.3s écoulées
+Flushed 100,108 positions vers Position_Stats
+354,000 parties traitées, 22,355,169 positions vues, 2699.9s écoulées
+355,000 parties traitées, 22,418,208 positions vues, 2705.2s écoulées
+Flushed 100,012 positions vers Position_Stats
+356,000 parties traitées, 22,482,790 positions vues, 2724.0s écoulées
+357,000 parties traitées, 22,546,532 positions vues, 2727.8s écoulées
+Flushed 100,043 positions vers Position_Stats
+358,000 parties traitées, 22,610,152 positions vues, 2744.3s écoulées
+Flushed 100,002 positions vers Position_Stats
+359,000 parties traitées, 22,673,039 positions vues, 2762.8s écoulées
+360,000 parties traitées, 22,737,060 positions vues, 2766.7s écoulées
+Flushed 100,037 positions vers Position_Stats
+361,000 parties traitées, 22,802,055 positions vues, 2786.6s écoulées
+362,000 parties traitées, 22,865,041 positions vues, 2792.3s écoulées
+Flushed 100,091 positions vers Position_Stats
+363,000 parties traitées, 22,928,749 positions vues, 2811.5s écoulées
+Flushed 100,046 positions vers Position_Stats
+364,000 parties traitées, 22,991,614 positions vues, 2828.7s écoulées
+365,000 parties traitées, 23,053,995 positions vues, 2833.2s écoulées
+Flushed 100,103 positions vers Position_Stats
+366,000 parties traitées, 23,117,186 positions vues, 2851.8s écoulées
+367,000 parties traitées, 23,180,445 positions vues, 2855.6s écoulées
+Flushed 100,048 positions vers Position_Stats
+368,000 parties traitées, 23,243,391 positions vues, 2875.6s écoulées
+369,000 parties traitées, 23,308,103 positions vues, 2880.6s écoulées
+Flushed 100,005 positions vers Position_Stats
+370,000 parties traitées, 23,372,718 positions vues, 2902.4s écoulées
+Flushed 100,042 positions vers Position_Stats
+371,000 parties traitées, 23,435,178 positions vues, 2926.0s écoulées
+372,000 parties traitées, 23,499,911 positions vues, 2931.3s écoulées
+Flushed 100,007 positions vers Position_Stats
+373,000 parties traitées, 23,563,711 positions vues, 2953.7s écoulées
+374,000 parties traitées, 23,625,583 positions vues, 2957.3s écoulées
+Flushed 100,008 positions vers Position_Stats
+375,000 parties traitées, 23,690,596 positions vues, 2979.5s écoulées
+Flushed 100,004 positions vers Position_Stats
+376,000 parties traitées, 23,754,322 positions vues, 3002.5s écoulées
+377,000 parties traitées, 23,819,581 positions vues, 3007.8s écoulées
+Flushed 100,005 positions vers Position_Stats
+378,000 parties traitées, 23,884,029 positions vues, 3031.8s écoulées
+379,000 parties traitées, 23,948,350 positions vues, 3036.7s écoulées
+Flushed 100,071 positions vers Position_Stats
+380,000 parties traitées, 24,012,995 positions vues, 3058.9s écoulées
+381,000 parties traitées, 24,077,722 positions vues, 3063.0s écoulées
+Flushed 100,007 positions vers Position_Stats
+382,000 parties traitées, 24,142,632 positions vues, 3088.7s écoulées
+Flushed 100,098 positions vers Position_Stats
+383,000 parties traitées, 24,206,118 positions vues, 3111.1s écoulées
+384,000 parties traitées, 24,270,713 positions vues, 3115.0s écoulées
+Flushed 100,020 positions vers Position_Stats
+385,000 parties traitées, 24,334,455 positions vues, 3139.9s écoulées
+386,000 parties traitées, 24,397,892 positions vues, 3143.8s écoulées
+Flushed 100,081 positions vers Position_Stats
+387,000 parties traitées, 24,461,053 positions vues, 3170.6s écoulées
+Flushed 100,007 positions vers Position_Stats
+388,000 parties traitées, 24,523,943 positions vues, 3197.4s écoulées
+389,000 parties traitées, 24,588,653 positions vues, 3202.0s écoulées
+Flushed 100,021 positions vers Position_Stats
+390,000 parties traitées, 24,651,689 positions vues, 3229.5s écoulées
+391,000 parties traitées, 24,714,237 positions vues, 3233.9s écoulées
+Flushed 100,060 positions vers Position_Stats
+392,000 parties traitées, 24,777,668 positions vues, 3262.3s écoulées
+393,000 parties traitées, 24,841,618 positions vues, 3266.1s écoulées
+Flushed 100,034 positions vers Position_Stats
+394,000 parties traitées, 24,904,442 positions vues, 3296.0s écoulées
+Flushed 100,022 positions vers Position_Stats
+395,000 parties traitées, 24,968,334 positions vues, 3324.1s écoulées
+396,000 parties traitées, 25,031,951 positions vues, 3328.2s écoulées
+Flushed 100,001 positions vers Position_Stats
+397,000 parties traitées, 25,095,489 positions vues, 3356.5s écoulées
+398,000 parties traitées, 25,158,595 positions vues, 3361.8s écoulées
+Flushed 100,103 positions vers Position_Stats
+399,000 parties traitées, 25,223,686 positions vues, 3388.8s écoulées
+Flushed 100,017 positions vers Position_Stats
+400,000 parties traitées, 25,285,111 positions vues, 3416.8s écoulées
+401,000 parties traitées, 25,349,023 positions vues, 3421.9s écoulées
+Flushed 100,012 positions vers Position_Stats
+402,000 parties traitées, 25,412,303 positions vues, 3452.5s écoulées
+403,000 parties traitées, 25,475,096 positions vues, 3456.4s écoulées
+Flushed 100,063 positions vers Position_Stats
+404,000 parties traitées, 25,538,080 positions vues, 3487.2s écoulées
+405,000 parties traitées, 25,602,257 positions vues, 3492.2s écoulées
+Flushed 100,051 positions vers Position_Stats
+406,000 parties traitées, 25,665,944 positions vues, 3524.4s écoulées
+Flushed 100,061 positions vers Position_Stats
+407,000 parties traitées, 25,727,028 positions vues, 3558.7s écoulées
+408,000 parties traitées, 25,788,570 positions vues, 3563.1s écoulées
+Flushed 100,053 positions vers Position_Stats
+409,000 parties traitées, 25,854,400 positions vues, 3597.8s écoulées
+410,000 parties traitées, 25,918,288 positions vues, 3601.7s écoulées
+Flushed 100,003 positions vers Position_Stats
+411,000 parties traitées, 25,982,629 positions vues, 3641.6s écoulées
+412,000 parties traitées, 26,048,094 positions vues, 3645.5s écoulées
+Flushed 100,064 positions vers Position_Stats
+413,000 parties traitées, 26,111,379 positions vues, 3686.6s écoulées
+Flushed 100,007 positions vers Position_Stats
+414,000 parties traitées, 26,173,963 positions vues, 3729.1s écoulées
+415,000 parties traitées, 26,237,081 positions vues, 3733.1s écoulées
+Flushed 100,011 positions vers Position_Stats
+416,000 parties traitées, 26,301,856 positions vues, 3781.6s écoulées
+417,000 parties traitées, 26,367,279 positions vues, 3785.5s écoulées
+Flushed 100,013 positions vers Position_Stats
+418,000 parties traitées, 26,432,114 positions vues, 3830.4s écoulées
+Flushed 100,029 positions vers Position_Stats
+419,000 parties traitées, 26,496,509 positions vues, 3878.6s écoulées
+420,000 parties traitées, 26,561,135 positions vues, 3882.8s écoulées
+Flushed 100,007 positions vers Position_Stats
+421,000 parties traitées, 26,624,769 positions vues, 3930.4s écoulées
+422,000 parties traitées, 26,686,701 positions vues, 3934.1s écoulées
+Flushed 100,008 positions vers Position_Stats
+423,000 parties traitées, 26,749,938 positions vues, 3982.1s écoulées
+Flushed 100,017 positions vers Position_Stats
+424,000 parties traitées, 26,814,076 positions vues, 4031.6s écoulées
+425,000 parties traitées, 26,878,560 positions vues, 4036.4s écoulées
+Flushed 100,066 positions vers Position_Stats
+426,000 parties traitées, 26,942,063 positions vues, 4083.3s écoulées
+427,000 parties traitées, 27,006,929 positions vues, 4087.3s écoulées
+Flushed 100,039 positions vers Position_Stats
+428,000 parties traitées, 27,070,018 positions vues, 4135.8s écoulées
+429,000 parties traitées, 27,131,668 positions vues, 4140.9s écoulées
+Flushed 100,009 positions vers Position_Stats
+430,000 parties traitées, 27,193,544 positions vues, 4192.5s écoulées
+431,000 parties traitées, 27,252,094 positions vues, 4197.2s écoulées
+Flushed 100,003 positions vers Position_Stats
+432,000 parties traitées, 27,312,495 positions vues, 4253.7s écoulées
+Flushed 100,020 positions vers Position_Stats
+433,000 parties traitées, 27,375,463 positions vues, 4310.9s écoulées
+434,000 parties traitées, 27,439,083 positions vues, 4314.9s écoulées
+Flushed 100,044 positions vers Position_Stats
+435,000 parties traitées, 27,502,607 positions vues, 4372.2s écoulées
+436,000 parties traitées, 27,565,204 positions vues, 4375.9s écoulées
+Flushed 100,033 positions vers Position_Stats
+437,000 parties traitées, 27,630,412 positions vues, 4434.3s écoulées
+Flushed 100,000 positions vers Position_Stats
+438,000 parties traitées, 27,695,453 positions vues, 4490.9s écoulées
+439,000 parties traitées, 27,759,440 positions vues, 4497.1s écoulées
+Flushed 100,048 positions vers Position_Stats
+440,000 parties traitées, 27,822,771 positions vues, 4553.7s écoulées
+441,000 parties traitées, 27,885,975 positions vues, 4558.1s écoulées
+Flushed 100,090 positions vers Position_Stats
+442,000 parties traitées, 27,949,093 positions vues, 4621.1s écoulées
+443,000 parties traitées, 28,012,028 positions vues, 4624.8s écoulées
+Flushed 100,029 positions vers Position_Stats
+444,000 parties traitées, 28,075,832 positions vues, 4690.2s écoulées
+Flushed 100,069 positions vers Position_Stats
+445,000 parties traitées, 28,140,074 positions vues, 4753.3s écoulées
+446,000 parties traitées, 28,201,647 positions vues, 4757.2s écoulées
+Flushed 100,016 positions vers Position_Stats
+447,000 parties traitées, 28,263,989 positions vues, 4824.5s écoulées
+448,000 parties traitées, 28,328,720 positions vues, 4828.9s écoulées
+Flushed 100,021 positions vers Position_Stats
+449,000 parties traitées, 28,393,485 positions vues, 4895.5s écoulées
+Flushed 100,006 positions vers Position_Stats
+450,000 parties traitées, 28,458,408 positions vues, 4963.5s écoulées
+451,000 parties traitées, 28,522,107 positions vues, 4968.3s écoulées
+Flushed 100,011 positions vers Position_Stats
+452,000 parties traitées, 28,584,804 positions vues, 5043.2s écoulées
+453,000 parties traitées, 28,648,835 positions vues, 5047.0s écoulées
+Flushed 100,078 positions vers Position_Stats
+454,000 parties traitées, 28,711,649 positions vues, 5117.5s écoulées
+455,000 parties traitées, 28,774,918 positions vues, 5122.3s écoulées
+Flushed 100,053 positions vers Position_Stats
+456,000 parties traitées, 28,839,317 positions vues, 5195.6s écoulées
+Flushed 100,007 positions vers Position_Stats
+457,000 parties traitées, 28,904,169 positions vues, 5268.2s écoulées
+458,000 parties traitées, 28,968,270 positions vues, 5272.5s écoulées
+Flushed 100,024 positions vers Position_Stats
+459,000 parties traitées, 29,032,746 positions vues, 5341.3s écoulées
+460,000 parties traitées, 29,097,845 positions vues, 5345.9s écoulées
+Flushed 100,048 positions vers Position_Stats
+461,000 parties traitées, 29,159,251 positions vues, 5422.1s écoulées
+Flushed 100,011 positions vers Position_Stats
+462,000 parties traitées, 29,222,352 positions vues, 5504.3s écoulées
+463,000 parties traitées, 29,286,253 positions vues, 5508.7s écoulées
+Flushed 100,016 positions vers Position_Stats
+464,000 parties traitées, 29,350,873 positions vues, 5584.0s écoulées
+465,000 parties traitées, 29,416,090 positions vues, 5589.0s écoulées
+Flushed 100,022 positions vers Position_Stats
+466,000 parties traitées, 29,479,607 positions vues, 5670.7s écoulées
+467,000 parties traitées, 29,542,439 positions vues, 5674.4s écoulées
+Flushed 100,033 positions vers Position_Stats
+468,000 parties traitées, 29,606,654 positions vues, 5759.1s écoulées
+Flushed 100,084 positions vers Position_Stats
+469,000 parties traitées, 29,669,531 positions vues, 5842.2s écoulées
+470,000 parties traitées, 29,732,630 positions vues, 5847.7s écoulées
+Flushed 100,044 positions vers Position_Stats
+471,000 parties traitées, 29,794,657 positions vues, 5937.0s écoulées
+472,000 parties traitées, 29,857,524 positions vues, 5940.9s écoulées
+Flushed 100,005 positions vers Position_Stats
+473,000 parties traitées, 29,920,620 positions vues, 6028.6s écoulées
+474,000 parties traitées, 29,983,989 positions vues, 6032.4s écoulées
+Flushed 100,000 positions vers Position_Stats
+475,000 parties traitées, 30,046,235 positions vues, 6122.9s écoulées
+Flushed 100,012 positions vers Position_Stats
+476,000 parties traitées, 30,110,461 positions vues, 6220.4s écoulées
+477,000 parties traitées, 30,173,437 positions vues, 6224.3s écoulées
+Flushed 100,026 positions vers Position_Stats
+478,000 parties traitées, 30,235,949 positions vues, 6320.2s écoulées
+479,000 parties traitées, 30,300,338 positions vues, 6325.1s écoulées
+Flushed 100,029 positions vers Position_Stats
+480,000 parties traitées, 30,364,142 positions vues, 6421.7s écoulées
+Flushed 100,006 positions vers Position_Stats
+481,000 parties traitées, 30,427,754 positions vues, 6519.1s écoulées
+482,000 parties traitées, 30,491,499 positions vues, 6523.7s écoulées
+Flushed 100,013 positions vers Position_Stats
+483,000 parties traitées, 30,554,361 positions vues, 6622.9s écoulées
+484,000 parties traitées, 30,617,127 positions vues, 6626.8s écoulées
+Flushed 100,012 positions vers Position_Stats
+485,000 parties traitées, 30,681,312 positions vues, 6730.1s écoulées
+486,000 parties traitées, 30,743,935 positions vues, 6733.8s écoulées
+Flushed 100,012 positions vers Position_Stats
+487,000 parties traitées, 30,807,184 positions vues, 6837.7s écoulées
+Flushed 100,032 positions vers Position_Stats
+488,000 parties traitées, 30,869,715 positions vues, 6948.3s écoulées
+489,000 parties traitées, 30,933,099 positions vues, 6952.6s écoulées
+Flushed 100,055 positions vers Position_Stats
+490,000 parties traitées, 30,996,243 positions vues, 7060.8s écoulées
+491,000 parties traitées, 31,058,123 positions vues, 7065.7s écoulées
+Flushed 100,046 positions vers Position_Stats
+492,000 parties traitées, 31,121,407 positions vues, 7177.3s écoulées
+493,000 parties traitées, 31,184,447 positions vues, 7181.0s écoulées
+Flushed 100,025 positions vers Position_Stats
+494,000 parties traitées, 31,247,646 positions vues, 7291.4s écoulées
+Flushed 100,023 positions vers Position_Stats
+495,000 parties traitées, 31,310,750 positions vues, 7404.8s écoulées
+496,000 parties traitées, 31,372,671 positions vues, 7408.9s écoulées
+Flushed 100,059 positions vers Position_Stats
+497,000 parties traitées, 31,436,351 positions vues, 7529.8s écoulées
+498,000 parties traitées, 31,499,829 positions vues, 7533.6s écoulées
+Flushed 100,000 positions vers Position_Stats
+499,000 parties traitées, 31,562,146 positions vues, 7648.9s écoulées
+500,000 parties traitées, 31,624,139 positions vues, 7652.7s écoulées
+Flushed 100,026 positions vers Position_Stats
+501,000 parties traitées, 31,681,055 positions vues, 7777.6s écoulées
+Flushed 100,020 positions vers Position_Stats
+502,000 parties traitées, 31,742,756 positions vues, 7911.1s écoulées
+503,000 parties traitées, 31,806,303 positions vues, 7915.7s écoulées
+Flushed 100,050 positions vers Position_Stats
+504,000 parties traitées, 31,869,011 positions vues, 8040.4s écoulées
+505,000 parties traitées, 31,932,328 positions vues, 8044.2s écoulées
+Flushed 100,053 positions vers Position_Stats
+506,000 parties traitées, 31,994,412 positions vues, 8171.7s écoulées
+507,000 parties traitées, 32,054,911 positions vues, 8175.4s écoulées
+Flushed 100,019 positions vers Position_Stats
+508,000 parties traitées, 32,118,364 positions vues, 8310.5s écoulées
+Flushed 100,060 positions vers Position_Stats
+509,000 parties traitées, 32,183,346 positions vues, 8438.7s écoulées
+510,000 parties traitées, 32,245,621 positions vues, 8443.0s écoulées
+Flushed 100,004 positions vers Position_Stats
+511,000 parties traitées, 32,308,541 positions vues, 8572.5s écoulées
+512,000 parties traitées, 32,370,974 positions vues, 8576.3s écoulées
+Flushed 100,036 positions vers Position_Stats
+513,000 parties traitées, 32,432,928 positions vues, 8712.8s écoulées
+514,000 parties traitées, 32,494,841 positions vues, 8716.6s écoulées
+Flushed 100,007 positions vers Position_Stats
+515,000 parties traitées, 32,557,935 positions vues, 8849.4s écoulées
+Flushed 100,002 positions vers Position_Stats
+516,000 parties traitées, 32,619,826 positions vues, 8991.3s écoulées
+517,000 parties traitées, 32,682,160 positions vues, 8995.6s écoulées
+Flushed 100,046 positions vers Position_Stats
+518,000 parties traitées, 32,746,002 positions vues, 9152.6s écoulées
+519,000 parties traitées, 32,809,865 positions vues, 9156.8s écoulées
+Flushed 100,019 positions vers Position_Stats
+520,000 parties traitées, 32,873,794 positions vues, 9299.9s écoulées
+521,000 parties traitées, 32,936,631 positions vues, 9304.7s écoulées
+Flushed 100,076 positions vers Position_Stats
+522,000 parties traitées, 33,000,105 positions vues, 9459.1s écoulées
+Flushed 100,001 positions vers Position_Stats
+523,000 parties traitées, 33,063,418 positions vues, 9616.8s écoulées
+524,000 parties traitées, 33,125,702 positions vues, 9620.9s écoulées
+Flushed 100,072 positions vers Position_Stats
+525,000 parties traitées, 33,187,403 positions vues, 9783.4s écoulées
+526,000 parties traitées, 33,250,551 positions vues, 9789.0s écoulées
+Flushed 100,022 positions vers Position_Stats
+527,000 parties traitées, 33,311,496 positions vues, 9948.3s écoulées
+528,000 parties traitées, 33,374,825 positions vues, 9952.1s écoulées
+Flushed 100,123 positions vers Position_Stats
+529,000 parties traitées, 33,438,370 positions vues, 10114.9s écoulées
+Flushed 100,033 positions vers Position_Stats
+530,000 parties traitées, 33,500,934 positions vues, 10286.5s écoulées
+531,000 parties traitées, 33,563,039 positions vues, 10292.7s écoulées
+Flushed 100,081 positions vers Position_Stats
+532,000 parties traitées, 33,626,358 positions vues, 10474.4s écoulées
+533,000 parties traitées, 33,689,005 positions vues, 10478.1s écoulées
+Flushed 100,030 positions vers Position_Stats
+534,000 parties traitées, 33,750,908 positions vues, 10661.0s écoulées
+535,000 parties traitées, 33,812,293 positions vues, 10664.7s écoulées
+Flushed 100,008 positions vers Position_Stats
+536,000 parties traitées, 33,874,553 positions vues, 10846.9s écoulées
+Flushed 100,017 positions vers Position_Stats
+537,000 parties traitées, 33,938,155 positions vues, 11026.8s écoulées
+538,000 parties traitées, 34,002,331 positions vues, 11031.7s écoulées
+Flushed 100,052 positions vers Position_Stats
+539,000 parties traitées, 34,063,859 positions vues, 11212.6s écoulées
+540,000 parties traitées, 34,127,420 positions vues, 11216.6s écoulées
+Flushed 100,027 positions vers Position_Stats
+541,000 parties traitées, 34,189,887 positions vues, 11406.0s écoulées
+542,000 parties traitées, 34,251,729 positions vues, 11409.8s écoulées
+Flushed 100,014 positions vers Position_Stats
+543,000 parties traitées, 34,315,173 positions vues, 11598.6s écoulées
+Flushed 100,061 positions vers Position_Stats
+544,000 parties traitées, 34,376,946 positions vues, 11792.1s écoulées
+545,000 parties traitées, 34,437,940 positions vues, 11797.0s écoulées
+Flushed 100,012 positions vers Position_Stats
+546,000 parties traitées, 34,501,815 positions vues, 11990.4s écoulées
+547,000 parties traitées, 34,564,890 positions vues, 11995.4s écoulées
+Flushed 100,030 positions vers Position_Stats
+548,000 parties traitées, 34,626,869 positions vues, 12187.1s écoulées
+549,000 parties traitées, 34,689,829 positions vues, 12190.9s écoulées
+Flushed 100,067 positions vers Position_Stats
+550,000 parties traitées, 34,752,426 positions vues, 12384.8s écoulées
+Flushed 100,000 positions vers Position_Stats
+551,000 parties traitées, 34,816,235 positions vues, 12583.2s écoulées
+552,000 parties traitées, 34,879,715 positions vues, 12587.6s écoulées
+Flushed 100,011 positions vers Position_Stats
+553,000 parties traitées, 34,942,794 positions vues, 12803.9s écoulées
+554,000 parties traitées, 35,006,194 positions vues, 12809.4s écoulées
+Flushed 100,044 positions vers Position_Stats
+555,000 parties traitées, 35,068,309 positions vues, 13031.4s écoulées
+556,000 parties traitées, 35,131,582 positions vues, 13035.5s écoulées
+Flushed 100,000 positions vers Position_Stats
+557,000 parties traitées, 35,194,249 positions vues, 13252.3s écoulées
+Flushed 100,025 positions vers Position_Stats
+558,000 parties traitées, 35,256,660 positions vues, 13470.7s écoulées
+559,000 parties traitées, 35,319,774 positions vues, 13474.9s écoulées
+Flushed 100,032 positions vers Position_Stats
+560,000 parties traitées, 35,383,079 positions vues, 13696.2s écoulées
+561,000 parties traitées, 35,445,116 positions vues, 13701.0s écoulées
+Flushed 100,075 positions vers Position_Stats
+562,000 parties traitées, 35,506,864 positions vues, 13927.2s écoulées
+563,000 parties traitées, 35,570,803 positions vues, 13931.8s écoulées
+Flushed 100,063 positions vers Position_Stats
+564,000 parties traitées, 35,631,901 positions vues, 14176.2s écoulées
+Flushed 100,046 positions vers Position_Stats
+565,000 parties traitées, 35,694,770 positions vues, 14430.3s écoulées
+566,000 parties traitées, 35,758,003 positions vues, 14434.5s écoulées
+Flushed 100,051 positions vers Position_Stats
+567,000 parties traitées, 35,820,663 positions vues, 14682.2s écoulées
+568,000 parties traitées, 35,885,382 positions vues, 14686.1s écoulées
+Flushed 100,095 positions vers Position_Stats
+569,000 parties traitées, 35,947,229 positions vues, 14938.7s écoulées
+570,000 parties traitées, 36,010,686 positions vues, 14942.5s écoulées
+Flushed 100,051 positions vers Position_Stats
+571,000 parties traitées, 36,073,656 positions vues, 15199.7s écoulées
+Flushed 100,011 positions vers Position_Stats
+572,000 parties traitées, 36,137,116 positions vues, 15462.3s écoulées
+573,000 parties traitées, 36,199,712 positions vues, 15466.8s écoulées
+Flushed 100,001 positions vers Position_Stats
+574,000 parties traitées, 36,261,983 positions vues, 15736.3s écoulées
+575,000 parties traitées, 36,324,828 positions vues, 15740.0s écoulées
+Flushed 100,040 positions vers Position_Stats
+576,000 parties traitées, 36,386,520 positions vues, 16018.6s écoulées
+577,000 parties traitées, 36,449,392 positions vues, 16022.3s écoulées
+Flushed 100,035 positions vers Position_Stats
+578,000 parties traitées, 36,513,523 positions vues, 16309.9s écoulées
+Flushed 100,082 positions vers Position_Stats
+579,000 parties traitées, 36,577,021 positions vues, 16594.3s écoulées
+580,000 parties traitées, 36,640,197 positions vues, 16598.3s écoulées
+Flushed 100,010 positions vers Position_Stats
+581,000 parties traitées, 36,702,630 positions vues, 16897.2s écoulées
+582,000 parties traitées, 36,764,138 positions vues, 16900.9s écoulées
+Flushed 100,012 positions vers Position_Stats
+583,000 parties traitées, 36,828,279 positions vues, 17199.6s écoulées
+Flushed 100,027 positions vers Position_Stats
+584,000 parties traitées, 36,891,751 positions vues, 17529.5s écoulées
+585,000 parties traitées, 36,955,321 positions vues, 17534.1s écoulées
+Flushed 100,012 positions vers Position_Stats
+586,000 parties traitées, 37,019,410 positions vues, 17858.8s écoulées
+587,000 parties traitées, 37,082,425 positions vues, 17862.9s écoulées
+Flushed 100,023 positions vers Position_Stats
+588,000 parties traitées, 37,147,280 positions vues, 18187.1s écoulées
+589,000 parties traitées, 37,210,485 positions vues, 18190.9s écoulées
+Flushed 100,015 positions vers Position_Stats
+590,000 parties traitées, 37,273,296 positions vues, 18515.5s écoulées
+Flushed 100,039 positions vers Position_Stats
+591,000 parties traitées, 37,333,315 positions vues, 18863.3s écoulées
+592,000 parties traitées, 37,395,314 positions vues, 18867.6s écoulées
+Flushed 100,038 positions vers Position_Stats
+593,000 parties traitées, 37,458,669 positions vues, 19209.3s écoulées
+594,000 parties traitées, 37,520,731 positions vues, 19213.6s écoulées
+Flushed 100,016 positions vers Position_Stats
+595,000 parties traitées, 37,581,933 positions vues, 19563.6s écoulées
+596,000 parties traitées, 37,643,901 positions vues, 19567.7s écoulées
+Flushed 100,001 positions vers Position_Stats
+597,000 parties traitées, 37,708,642 positions vues, 19919.3s écoulées
+Flushed 100,022 positions vers Position_Stats
+598,000 parties traitées, 37,769,951 positions vues, 20274.9s écoulées
+599,000 parties traitées, 37,832,643 positions vues, 20279.4s écoulées
+Flushed 100,028 positions vers Position_Stats
+600,000 parties traitées, 37,896,340 positions vues, 20648.1s écoulées
+601,000 parties traitées, 37,958,339 positions vues, 20652.6s écoulées
+Flushed 100,077 positions vers Position_Stats
+602,000 parties traitées, 38,020,710 positions vues, 21033.6s écoulées
+603,000 parties traitées, 38,083,507 positions vues, 21037.4s écoulées
+Flushed 100,025 positions vers Position_Stats
+604,000 parties traitées, 38,145,136 positions vues, 21421.3s écoulées
+Flushed 100,012 positions vers Position_Stats
+605,000 parties traitées, 38,206,753 positions vues, 21802.0s écoulées
+606,000 parties traitées, 38,269,874 positions vues, 21806.7s écoulées
+Flushed 100,073 positions vers Position_Stats
+607,000 parties traitées, 38,333,857 positions vues, 22196.6s écoulées
+608,000 parties traitées, 38,395,390 positions vues, 22201.2s écoulées
+Flushed 100,065 positions vers Position_Stats
+609,000 parties traitées, 38,456,330 positions vues, 22595.0s écoulées
+610,000 parties traitées, 38,519,518 positions vues, 22599.1s écoulées
+Flushed 100,048 positions vers Position_Stats
+611,000 parties traitées, 38,583,784 positions vues, 22998.8s écoulées
+Flushed 100,062 positions vers Position_Stats
+612,000 parties traitées, 38,644,217 positions vues, 23393.2s écoulées
+613,000 parties traitées, 38,706,611 positions vues, 23397.6s écoulées
+Flushed 100,013 positions vers Position_Stats
+614,000 parties traitées, 38,769,499 positions vues, 23799.3s écoulées
+615,000 parties traitées, 38,832,019 positions vues, 23803.1s écoulées
+Flushed 100,028 positions vers Position_Stats
+616,000 parties traitées, 38,895,078 positions vues, 24193.8s écoulées
+617,000 parties traitées, 38,957,751 positions vues, 24200.0s écoulées
+Flushed 100,039 positions vers Position_Stats
+618,000 parties traitées, 39,019,710 positions vues, 24579.1s écoulées
+Flushed 100,005 positions vers Position_Stats
+619,000 parties traitées, 39,083,912 positions vues, 24953.1s écoulées
+620,000 parties traitées, 39,146,804 positions vues, 24957.9s écoulées
+Flushed 100,090 positions vers Position_Stats
+621,000 parties traitées, 39,207,947 positions vues, 25352.6s écoulées
+622,000 parties traitées, 39,270,086 positions vues, 25356.3s écoulées
+Flushed 100,030 positions vers Position_Stats
+623,000 parties traitées, 39,334,000 positions vues, 25748.6s écoulées
+624,000 parties traitées, 39,395,304 positions vues, 25752.2s écoulées
+Flushed 100,077 positions vers Position_Stats
+625,000 parties traitées, 39,459,278 positions vues, 26138.6s écoulées
+Flushed 100,020 positions vers Position_Stats
+626,000 parties traitées, 39,522,469 positions vues, 26521.8s écoulées
+627,000 parties traitées, 39,584,907 positions vues, 26526.9s écoulées
+Flushed 100,027 positions vers Position_Stats
+628,000 parties traitées, 39,647,241 positions vues, 26920.1s écoulées
+629,000 parties traitées, 39,710,977 positions vues, 26924.6s écoulées
+Flushed 100,032 positions vers Position_Stats
+630,000 parties traitées, 39,774,037 positions vues, 27314.9s écoulées
+631,000 parties traitées, 39,836,118 positions vues, 27319.7s écoulées
+Flushed 100,071 positions vers Position_Stats
+632,000 parties traitées, 39,899,363 positions vues, 27714.5s écoulées
+Flushed 100,100 positions vers Position_Stats
+633,000 parties traitées, 39,961,489 positions vues, 28098.5s écoulées
+634,000 parties traitées, 40,022,514 positions vues, 28103.8s écoulées
+Flushed 100,089 positions vers Position_Stats
+635,000 parties traitées, 40,083,560 positions vues, 28511.1s écoulées
+636,000 parties traitées, 40,147,028 positions vues, 28514.9s écoulées
+Flushed 100,040 positions vers Position_Stats
+637,000 parties traitées, 40,207,804 positions vues, 28922.2s écoulées
+638,000 parties traitées, 40,271,154 positions vues, 28927.2s écoulées
+Flushed 100,000 positions vers Position_Stats
+639,000 parties traitées, 40,333,145 positions vues, 29332.8s écoulées
+640,000 parties traitées, 40,395,888 positions vues, 29336.5s écoulées
+Flushed 100,040 positions vers Position_Stats
+641,000 parties traitées, 40,460,248 positions vues, 29746.0s écoulées
+Flushed 100,067 positions vers Position_Stats
+642,000 parties traitées, 40,521,653 positions vues, 30151.1s écoulées
+643,000 parties traitées, 40,583,236 positions vues, 30156.1s écoulées
+Flushed 100,025 positions vers Position_Stats
+644,000 parties traitées, 40,646,846 positions vues, 30562.8s écoulées
+645,000 parties traitées, 40,708,107 positions vues, 30566.5s écoulées
+Flushed 100,024 positions vers Position_Stats
+646,000 parties traitées, 40,771,539 positions vues, 30981.9s écoulées
+647,000 parties traitées, 40,833,339 positions vues, 30986.6s écoulées
+Flushed 100,061 positions vers Position_Stats
+648,000 parties traitées, 40,895,612 positions vues, 31397.0s écoulées
+Flushed 100,012 positions vers Position_Stats
+649,000 parties traitées, 40,958,688 positions vues, 31823.3s écoulées
+650,000 parties traitées, 41,020,036 positions vues, 31827.1s écoulées
+Flushed 100,037 positions vers Position_Stats
+651,000 parties traitées, 41,082,440 positions vues, 32260.7s écoulées
+652,000 parties traitées, 41,144,743 positions vues, 32264.6s écoulées
+Flushed 100,063 positions vers Position_Stats
+653,000 parties traitées, 41,207,118 positions vues, 32691.0s écoulées
+654,000 parties traitées, 41,271,107 positions vues, 32694.8s écoulées
+Flushed 100,042 positions vers Position_Stats
+655,000 parties traitées, 41,335,883 positions vues, 33126.4s écoulées
+Flushed 100,074 positions vers Position_Stats
+656,000 parties traitées, 41,399,497 positions vues, 33550.7s écoulées
+657,000 parties traitées, 41,461,824 positions vues, 33555.2s écoulées
+Flushed 100,006 positions vers Position_Stats
+658,000 parties traitées, 41,525,389 positions vues, 33984.3s écoulées
+659,000 parties traitées, 41,588,710 positions vues, 33988.1s écoulées
+Flushed 100,009 positions vers Position_Stats
+660,000 parties traitées, 41,650,539 positions vues, 34412.7s écoulées
+Flushed 100,042 positions vers Position_Stats
+661,000 parties traitées, 41,710,970 positions vues, 34865.5s écoulées
+662,000 parties traitées, 41,774,460 positions vues, 34870.0s écoulées
+Flushed 100,063 positions vers Position_Stats
+663,000 parties traitées, 41,837,739 positions vues, 35307.1s écoulées
+664,000 parties traitées, 41,901,884 positions vues, 35311.0s écoulées
+Flushed 100,017 positions vers Position_Stats
+665,000 parties traitées, 41,964,793 positions vues, 35751.3s écoulées
+666,000 parties traitées, 42,027,356 positions vues, 35755.8s écoulées
+Flushed 100,027 positions vers Position_Stats
+667,000 parties traitées, 42,091,169 positions vues, 36198.3s écoulées
+Flushed 100,059 positions vers Position_Stats
+668,000 parties traitées, 42,152,937 positions vues, 36645.5s écoulées
+669,000 parties traitées, 42,217,130 positions vues, 36650.1s écoulées
+Flushed 100,034 positions vers Position_Stats
+670,000 parties traitées, 42,279,085 positions vues, 37102.8s écoulées
+671,000 parties traitées, 42,342,665 positions vues, 37107.4s écoulées
+Flushed 100,026 positions vers Position_Stats
+672,000 parties traitées, 42,406,921 positions vues, 37566.8s écoulées
+673,000 parties traitées, 42,471,112 positions vues, 37570.5s écoulées
+Flushed 100,043 positions vers Position_Stats
+674,000 parties traitées, 42,535,001 positions vues, 38022.3s écoulées
+Flushed 100,042 positions vers Position_Stats
+675,000 parties traitées, 42,597,498 positions vues, 38482.7s écoulées
+676,000 parties traitées, 42,660,709 positions vues, 38487.9s écoulées
+Flushed 100,039 positions vers Position_Stats
+677,000 parties traitées, 42,724,981 positions vues, 38961.4s écoulées
+678,000 parties traitées, 42,788,388 positions vues, 38965.2s écoulées
+Flushed 100,090 positions vers Position_Stats
+679,000 parties traitées, 42,852,225 positions vues, 39439.5s écoulées
+680,000 parties traitées, 42,914,553 positions vues, 39443.2s écoulées
+Flushed 100,035 positions vers Position_Stats
+681,000 parties traitées, 42,978,538 positions vues, 39923.6s écoulées
+Flushed 100,004 positions vers Position_Stats
+682,000 parties traitées, 43,040,789 positions vues, 40413.2s écoulées
+683,000 parties traitées, 43,104,356 positions vues, 40418.9s écoulées
+Flushed 100,019 positions vers Position_Stats
+684,000 parties traitées, 43,167,153 positions vues, 40919.3s écoulées
+685,000 parties traitées, 43,229,831 positions vues, 40923.1s écoulées
+Flushed 100,022 positions vers Position_Stats
+686,000 parties traitées, 43,293,825 positions vues, 41435.8s écoulées
+Flushed 100,030 positions vers Position_Stats
+687,000 parties traitées, 43,355,188 positions vues, 41953.7s écoulées
+688,000 parties traitées, 43,418,947 positions vues, 41958.2s écoulées
+Flushed 100,068 positions vers Position_Stats
+689,000 parties traitées, 43,484,045 positions vues, 42463.6s écoulées
+690,000 parties traitées, 43,546,119 positions vues, 42467.4s écoulées
+Flushed 100,010 positions vers Position_Stats
+691,000 parties traitées, 43,608,076 positions vues, 42981.0s écoulées
+692,000 parties traitées, 43,673,090 positions vues, 42984.8s écoulées
+Flushed 100,025 positions vers Position_Stats
+693,000 parties traitées, 43,736,364 positions vues, 43488.6s écoulées
+Flushed 100,001 positions vers Position_Stats
+694,000 parties traitées, 43,800,023 positions vues, 44003.1s écoulées
+695,000 parties traitées, 43,863,364 positions vues, 44008.4s écoulées
+Flushed 100,054 positions vers Position_Stats
+696,000 parties traitées, 43,927,565 positions vues, 44519.6s écoulées
+697,000 parties traitées, 43,990,327 positions vues, 44525.2s écoulées
+Flushed 100,008 positions vers Position_Stats
+698,000 parties traitées, 44,053,950 positions vues, 45030.9s écoulées
+699,000 parties traitées, 44,117,757 positions vues, 45035.8s écoulées
+Flushed 100,032 positions vers Position_Stats
+700,000 parties traitées, 44,179,720 positions vues, 45548.9s écoulées
+Flushed 100,024 positions vers Position_Stats
+701,000 parties traitées, 44,243,485 positions vues, 46055.3s écoulées
+702,000 parties traitées, 44,304,861 positions vues, 46059.2s écoulées
+Flushed 100,061 positions vers Position_Stats
+703,000 parties traitées, 44,367,054 positions vues, 46566.7s écoulées
+704,000 parties traitées, 44,431,024 positions vues, 46570.5s écoulées
+Flushed 100,004 positions vers Position_Stats
+705,000 parties traitées, 44,493,844 positions vues, 47077.7s écoulées
+706,000 parties traitées, 44,556,908 positions vues, 47082.0s écoulées
+Flushed 100,037 positions vers Position_Stats
+707,000 parties traitées, 44,620,205 positions vues, 47592.9s écoulées
+Flushed 100,126 positions vers Position_Stats
+708,000 parties traitées, 44,684,434 positions vues, 48119.3s écoulées
+709,000 parties traitées, 44,748,048 positions vues, 48123.2s écoulées
+Flushed 100,025 positions vers Position_Stats
+710,000 parties traitées, 44,812,450 positions vues, 48647.6s écoulées
+711,000 parties traitées, 44,874,180 positions vues, 48652.0s écoulées
+Flushed 100,036 positions vers Position_Stats
+712,000 parties traitées, 44,937,617 positions vues, 49168.4s écoulées
+Flushed 100,008 positions vers Position_Stats
+713,000 parties traitées, 45,000,774 positions vues, 49682.1s écoulées
+714,000 parties traitées, 45,062,577 positions vues, 49687.6s écoulées
+Flushed 100,011 positions vers Position_Stats
+715,000 parties traitées, 45,125,741 positions vues, 50217.0s écoulées
+716,000 parties traitées, 45,189,644 positions vues, 50220.8s écoulées
+Flushed 100,056 positions vers Position_Stats
+717,000 parties traitées, 45,253,083 positions vues, 50751.8s écoulées
+718,000 parties traitées, 45,318,582 positions vues, 50755.7s écoulées
+Flushed 100,014 positions vers Position_Stats
+719,000 parties traitées, 45,381,468 positions vues, 51279.8s écoulées
+Flushed 100,067 positions vers Position_Stats
+720,000 parties traitées, 45,443,444 positions vues, 51827.5s écoulées
+721,000 parties traitées, 45,506,713 positions vues, 51832.3s écoulées
+Flushed 100,060 positions vers Position_Stats
+722,000 parties traitées, 45,571,046 positions vues, 52377.2s écoulées
+723,000 parties traitées, 45,633,524 positions vues, 52381.9s écoulées
+Flushed 100,047 positions vers Position_Stats
+724,000 parties traitées, 45,696,136 positions vues, 52930.3s écoulées
+725,000 parties traitées, 45,758,668 positions vues, 52936.4s écoulées
+Flushed 100,022 positions vers Position_Stats
+726,000 parties traitées, 45,821,297 positions vues, 53477.8s écoulées
+Flushed 100,071 positions vers Position_Stats
+727,000 parties traitées, 45,884,009 positions vues, 54047.2s écoulées
+728,000 parties traitées, 45,945,683 positions vues, 54051.7s écoulées
+Flushed 100,015 positions vers Position_Stats
+729,000 parties traitées, 46,008,160 positions vues, 54614.9s écoulées
+730,000 parties traitées, 46,071,402 positions vues, 54619.6s écoulées
+Flushed 100,056 positions vers Position_Stats
+731,000 parties traitées, 46,134,800 positions vues, 55193.0s écoulées
+732,000 parties traitées, 46,198,730 positions vues, 55197.9s écoulées
+Flushed 100,064 positions vers Position_Stats
+733,000 parties traitées, 46,262,367 positions vues, 55755.0s écoulées
+Flushed 100,024 positions vers Position_Stats
+734,000 parties traitées, 46,326,000 positions vues, 56328.6s écoulées
+735,000 parties traitées, 46,388,591 positions vues, 56332.8s écoulées
+Flushed 100,008 positions vers Position_Stats
+736,000 parties traitées, 46,450,133 positions vues, 56924.9s écoulées
+737,000 parties traitées, 46,513,820 positions vues, 56929.0s écoulées
+Flushed 100,070 positions vers Position_Stats
+738,000 parties traitées, 46,578,089 positions vues, 57491.0s écoulées
+Flushed 100,041 positions vers Position_Stats
+739,000 parties traitées, 46,641,715 positions vues, 58074.9s écoulées
+740,000 parties traitées, 46,706,296 positions vues, 58080.6s écoulées
+Flushed 100,038 positions vers Position_Stats
+741,000 parties traitées, 46,770,549 positions vues, 58668.2s écoulées
+742,000 parties traitées, 46,835,766 positions vues, 58672.1s écoulées
+Flushed 100,056 positions vers Position_Stats
+743,000 parties traitées, 46,898,823 positions vues, 59263.6s écoulées
+744,000 parties traitées, 46,961,342 positions vues, 59267.3s écoulées
+Flushed 100,055 positions vers Position_Stats
+745,000 parties traitées, 47,026,228 positions vues, 59862.1s écoulées
+Flushed 100,006 positions vers Position_Stats
+746,000 parties traitées, 47,089,288 positions vues, 60455.4s écoulées
+747,000 parties traitées, 47,152,283 positions vues, 60459.9s écoulées
+Flushed 100,034 positions vers Position_Stats
+748,000 parties traitées, 47,216,370 positions vues, 61063.8s écoulées
+749,000 parties traitées, 47,280,550 positions vues, 61067.7s écoulées
+Flushed 100,019 positions vers Position_Stats
+750,000 parties traitées, 47,343,139 positions vues, 61692.3s écoulées
+Flushed 100,043 positions vers Position_Stats
+751,000 parties traitées, 47,407,771 positions vues, 62297.6s écoulées
+752,000 parties traitées, 47,470,180 positions vues, 62302.2s écoulées
+Flushed 100,015 positions vers Position_Stats
+753,000 parties traitées, 47,533,554 positions vues, 62916.7s écoulées
+754,000 parties traitées, 47,596,614 positions vues, 62922.2s écoulées
+Flushed 100,002 positions vers Position_Stats
+755,000 parties traitées, 47,659,326 positions vues, 63541.9s écoulées
+756,000 parties traitées, 47,724,657 positions vues, 63545.8s écoulées
+Flushed 100,129 positions vers Position_Stats
+757,000 parties traitées, 47,789,391 positions vues, 64158.8s écoulées
+Flushed 100,021 positions vers Position_Stats
+758,000 parties traitées, 47,853,256 positions vues, 64783.6s écoulées
+759,000 parties traitées, 47,916,347 positions vues, 64787.8s écoulées
+Flushed 100,028 positions vers Position_Stats
+760,000 parties traitées, 47,978,654 positions vues, 65419.3s écoulées
+761,000 parties traitées, 48,041,972 positions vues, 65424.6s écoulées
+Flushed 100,043 positions vers Position_Stats
+762,000 parties traitées, 48,108,088 positions vues, 66054.0s écoulées
+Flushed 100,046 positions vers Position_Stats
+763,000 parties traitées, 48,173,307 positions vues, 66666.1s écoulées
+764,000 parties traitées, 48,236,733 positions vues, 66670.8s écoulées
+Flushed 100,047 positions vers Position_Stats
+765,000 parties traitées, 48,299,665 positions vues, 67300.3s écoulées
+766,000 parties traitées, 48,362,969 positions vues, 67304.1s écoulées
+Flushed 100,019 positions vers Position_Stats
+767,000 parties traitées, 48,427,111 positions vues, 67927.3s écoulées
+768,000 parties traitées, 48,489,678 positions vues, 67931.0s écoulées
+Flushed 100,032 positions vers Position_Stats
+769,000 parties traitées, 48,553,533 positions vues, 68563.3s écoulées
+Flushed 100,014 positions vers Position_Stats
+770,000 parties traitées, 48,615,787 positions vues, 69198.9s écoulées
+771,000 parties traitées, 48,677,119 positions vues, 69203.7s écoulées
+Flushed 100,005 positions vers Position_Stats
+772,000 parties traitées, 48,740,717 positions vues, 69871.2s écoulées
+773,000 parties traitées, 48,804,725 positions vues, 69875.1s écoulées
+Flushed 100,006 positions vers Position_Stats
+774,000 parties traitées, 48,867,613 positions vues, 70508.9s écoulées
+775,000 parties traitées, 48,929,785 positions vues, 70512.6s écoulées
+Flushed 100,030 positions vers Position_Stats
+776,000 parties traitées, 48,993,304 positions vues, 71152.4s écoulées
+Flushed 100,005 positions vers Position_Stats
+777,000 parties traitées, 49,054,688 positions vues, 71795.6s écoulées
+778,000 parties traitées, 49,118,275 positions vues, 71800.8s écoulées
+Flushed 100,001 positions vers Position_Stats
+779,000 parties traitées, 49,181,276 positions vues, 72462.7s écoulées
+780,000 parties traitées, 49,246,769 positions vues, 72466.7s écoulées
+Flushed 100,014 positions vers Position_Stats
+781,000 parties traitées, 49,310,404 positions vues, 73098.5s écoulées
+782,000 parties traitées, 49,373,706 positions vues, 73102.2s écoulées
+Flushed 100,038 positions vers Position_Stats
+783,000 parties traitées, 49,437,927 positions vues, 73767.1s écoulées
+Flushed 100,039 positions vers Position_Stats
+784,000 parties traitées, 49,500,070 positions vues, 74452.4s écoulées
+785,000 parties traitées, 49,563,217 positions vues, 74457.7s écoulées
+Flushed 100,042 positions vers Position_Stats
+786,000 parties traitées, 49,626,831 positions vues, 75112.6s écoulées
+787,000 parties traitées, 49,689,969 positions vues, 75117.6s écoulées
+Flushed 100,003 positions vers Position_Stats
+788,000 parties traitées, 49,754,538 positions vues, 75783.8s écoulées
+Flushed 100,033 positions vers Position_Stats
+789,000 parties traitées, 49,817,706 positions vues, 76460.2s écoulées
+790,000 parties traitées, 49,878,209 positions vues, 76464.4s écoulées
+Flushed 100,021 positions vers Position_Stats
+791,000 parties traitées, 49,941,807 positions vues, 77147.0s écoulées
+792,000 parties traitées, 50,004,661 positions vues, 77150.7s écoulées
+Flushed 100,006 positions vers Position_Stats
+793,000 parties traitées, 50,067,386 positions vues, 77844.9s écoulées
+794,000 parties traitées, 50,131,157 positions vues, 77848.7s écoulées
+Flushed 100,055 positions vers Position_Stats
+795,000 parties traitées, 50,194,184 positions vues, 78518.9s écoulées
+Flushed 100,027 positions vers Position_Stats
+796,000 parties traitées, 50,257,025 positions vues, 79193.0s écoulées
+797,000 parties traitées, 50,319,973 positions vues, 79197.2s écoulées
+Flushed 100,047 positions vers Position_Stats
+798,000 parties traitées, 50,382,238 positions vues, 79897.3s écoulées
+799,000 parties traitées, 50,447,295 positions vues, 79901.1s écoulées
+Flushed 100,020 positions vers Position_Stats
+800,000 parties traitées, 50,512,107 positions vues, 80603.7s écoulées
+801,000 parties traitées, 50,575,806 positions vues, 80608.2s écoulées
+Flushed 100,019 positions vers Position_Stats
+802,000 parties traitées, 50,638,637 positions vues, 81307.5s écoulées
+Flushed 100,001 positions vers Position_Stats
+803,000 parties traitées, 50,702,357 positions vues, 81991.8s écoulées
+804,000 parties traitées, 50,766,280 positions vues, 81996.5s écoulées
+Flushed 100,206 positions vers Position_Stats
+805,000 parties traitées, 50,829,679 positions vues, 82710.1s écoulées
+806,000 parties traitées, 50,893,305 positions vues, 82713.9s écoulées
+Flushed 100,031 positions vers Position_Stats
+807,000 parties traitées, 50,956,135 positions vues, 83420.1s écoulées
+Flushed 100,001 positions vers Position_Stats
+808,000 parties traitées, 51,017,154 positions vues, 84154.5s écoulées
+809,000 parties traitées, 51,079,999 positions vues, 84159.2s écoulées
+Flushed 100,024 positions vers Position_Stats
+810,000 parties traitées, 51,142,461 positions vues, 84883.5s écoulées
+811,000 parties traitées, 51,203,898 positions vues, 84888.0s écoulées
+Flushed 100,044 positions vers Position_Stats
+812,000 parties traitées, 51,267,704 positions vues, 85630.4s écoulées
+813,000 parties traitées, 51,331,782 positions vues, 85634.8s écoulées
+Flushed 100,031 positions vers Position_Stats
+814,000 parties traitées, 51,395,885 positions vues, 86372.1s écoulées
+Flushed 100,062 positions vers Position_Stats
+815,000 parties traitées, 51,459,283 positions vues, 87116.5s écoulées
+816,000 parties traitées, 51,522,162 positions vues, 87120.9s écoulées
+Flushed 100,070 positions vers Position_Stats
+817,000 parties traitées, 51,587,321 positions vues, 87841.9s écoulées
+818,000 parties traitées, 51,651,117 positions vues, 87845.7s écoulées
+Flushed 100,038 positions vers Position_Stats
+819,000 parties traitées, 51,715,384 positions vues, 88607.7s écoulées
+820,000 parties traitées, 51,778,784 positions vues, 88612.9s écoulées
+Flushed 100,047 positions vers Position_Stats
+821,000 parties traitées, 51,840,602 positions vues, 89361.4s écoulées
+Flushed 100,038 positions vers Position_Stats
+822,000 parties traitées, 51,903,502 positions vues, 90109.6s écoulées
+823,000 parties traitées, 51,968,045 positions vues, 90114.0s écoulées
+Flushed 100,020 positions vers Position_Stats
+824,000 parties traitées, 52,030,608 positions vues, 90875.3s écoulées
+825,000 parties traitées, 52,094,681 positions vues, 90879.1s écoulées
+Flushed 100,075 positions vers Position_Stats
+826,000 parties traitées, 52,158,718 positions vues, 91637.3s écoulées
+827,000 parties traitées, 52,220,046 positions vues, 91641.0s écoulées
+Flushed 100,035 positions vers Position_Stats
+828,000 parties traitées, 52,283,404 positions vues, 92417.1s écoulées
+Flushed 100,080 positions vers Position_Stats
+829,000 parties traitées, 52,347,028 positions vues, 93186.2s écoulées
+830,000 parties traitées, 52,409,758 positions vues, 93190.0s écoulées
+Flushed 100,058 positions vers Position_Stats
+831,000 parties traitées, 52,474,573 positions vues, 93972.8s écoulées
+832,000 parties traitées, 52,538,478 positions vues, 93976.5s écoulées
+Flushed 100,002 positions vers Position_Stats
+833,000 parties traitées, 52,600,471 positions vues, 94734.3s écoulées
+Flushed 100,006 positions vers Position_Stats
+834,000 parties traitées, 52,662,391 positions vues, 95507.3s écoulées
+835,000 parties traitées, 52,724,413 positions vues, 95511.7s écoulées
+Flushed 100,071 positions vers Position_Stats
+836,000 parties traitées, 52,786,763 positions vues, 96302.6s écoulées
+837,000 parties traitées, 52,850,561 positions vues, 96306.4s écoulées
+Flushed 100,013 positions vers Position_Stats
+838,000 parties traitées, 52,912,779 positions vues, 97072.4s écoulées
+839,000 parties traitées, 52,974,551 positions vues, 97076.5s écoulées
+Flushed 100,087 positions vers Position_Stats
+840,000 parties traitées, 53,038,237 positions vues, 97855.2s écoulées
+Flushed 100,091 positions vers Position_Stats
+841,000 parties traitées, 53,101,210 positions vues, 98671.0s écoulées
+842,000 parties traitées, 53,164,531 positions vues, 98676.3s écoulées
+Flushed 100,031 positions vers Position_Stats
+843,000 parties traitées, 53,227,996 positions vues, 99484.2s écoulées
+844,000 parties traitées, 53,289,950 positions vues, 99489.1s écoulées
+Flushed 100,047 positions vers Position_Stats
+845,000 parties traitées, 53,354,394 positions vues, 100309.6s écoulées
+846,000 parties traitées, 53,417,162 positions vues, 100313.3s écoulées
+Flushed 100,071 positions vers Position_Stats
+847,000 parties traitées, 53,479,904 positions vues, 101109.2s écoulées
+Flushed 100,025 positions vers Position_Stats
+848,000 parties traitées, 53,542,593 positions vues, 101926.2s écoulées
+849,000 parties traitées, 53,606,646 positions vues, 101930.4s écoulées
+Flushed 100,006 positions vers Position_Stats
+850,000 parties traitées, 53,671,659 positions vues, 102737.7s écoulées
+851,000 parties traitées, 53,733,946 positions vues, 102743.1s écoulées
+Flushed 100,031 positions vers Position_Stats
+852,000 parties traitées, 53,796,925 positions vues, 103550.3s écoulées
+853,000 parties traitées, 53,860,065 positions vues, 103554.8s écoulées
+Flushed 100,041 positions vers Position_Stats
+854,000 parties traitées, 53,924,863 positions vues, 104389.7s écoulées
+Flushed 100,011 positions vers Position_Stats
+855,000 parties traitées, 53,987,315 positions vues, 105220.9s écoulées
+856,000 parties traitées, 54,050,841 positions vues, 105225.2s écoulées
+Flushed 100,023 positions vers Position_Stats
+857,000 parties traitées, 54,113,531 positions vues, 106032.0s écoulées
+858,000 parties traitées, 54,177,382 positions vues, 106035.7s écoulées
+Flushed 100,038 positions vers Position_Stats
+859,000 parties traitées, 54,240,952 positions vues, 106855.4s écoulées
+Flushed 100,003 positions vers Position_Stats
+860,000 parties traitées, 54,305,108 positions vues, 107671.6s écoulées
+861,000 parties traitées, 54,367,116 positions vues, 107676.4s écoulées
+Flushed 100,041 positions vers Position_Stats
+862,000 parties traitées, 54,429,019 positions vues, 108496.2s écoulées
+863,000 parties traitées, 54,491,117 positions vues, 108499.9s écoulées

@@ -1,0 +1,7 @@
+# .gitattributes
+* text=auto eol=lf
+
+# Fichiers binaires à ne pas corrompre avec les conversions de fin de ligne
+*.joblib binary
+*.pkl binary
+*.h5 binary

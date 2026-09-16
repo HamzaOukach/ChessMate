@@ -1,0 +1,293 @@
+<style>
+#erd { padding: 8px 0; }
+#erd svg.erDiagram { max-width: 100%; height: auto; }
+#erd svg.erDiagram .divider path { stroke-opacity: 0.4; }
+#erd svg.erDiagram .row-rect-odd path,
+#erd svg.erDiagram .row-rect-odd rect,
+#erd svg.erDiagram .row-rect-even path,
+#erd svg.erDiagram .row-rect-even rect { stroke: none !important; }
+#erd svg.erDiagram .relationshipLabelBox { fill: #FAEEDA !important; stroke: #EF9F27 !important; }
+#erd svg.erDiagram .relationshipLabel { font-weight: 500 !important; }
+.legend { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; padding:10px 14px; background:var(--color-background-secondary); border-radius:var(--border-radius-md); font-size:12px; color:var(--color-text-secondary); border:0.5px solid var(--color-border-tertiary); }
+.legend-item { display:flex; align-items:center; gap:6px; }
+.legend-swatch { width:12px; height:12px; border-radius:3px; border:0.5px solid rgba(0,0,0,0.2); }
+</style>
+<div id="erd"></div>
+<div class="legend">
+  <div class="legend-item"><span class="legend-swatch" style="background:#185FA5"></span>Users &amp; rights</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#EF9F27"></span>Games &amp; tournaments</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#378ADD"></span>Analysis engine (ETL/ML)</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#BA7517"></span>Social module</div>
+</div>
+<script type="module">
+import mermaid from 'https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs';
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+await document.fonts.ready;
+
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'base',
+  fontFamily: '"Anthropic Sans", sans-serif',
+  er: { layoutDirection: 'TB', entityPadding: 15, minEntityWidth: 140, minEntityHeight: 75 },
+  themeVariables: {
+    darkMode: dark,
+    fontSize: '13px',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    lineColor: dark ? '#FAC775' : '#BA7517',
+    textColor: dark ? '#E6F1FB' : '#042C53',
+    primaryColor: dark ? '#0C447C' : '#E6F1FB',
+    primaryBorderColor: dark ? '#85B7EB' : '#185FA5',
+    primaryTextColor: dark ? '#E6F1FB' : '#042C53',
+  },
+});
+
+const diagram = `erDiagram
+  UTILISATEUR ||--|| JOUEUR : "est"
+  UTILISATEUR }o--o{ ROLE : "possede"
+  UTILISATEUR }o--o{ PROFIL : "possede"
+  PROFIL }o--o{ ROLE : "lie"
+
+  JOUEUR ||--o{ TOURNOI : "organise"
+  JOUEUR }o--o{ TOURNOI : "participe"
+  JOUEUR ||--o{ PARTIE : "joue-blanc"
+  JOUEUR ||--o{ PARTIE : "joue-noir"
+  JOUEUR ||--o{ ONLINE_PARTIE : "online-blanc"
+  JOUEUR ||--o{ ONLINE_PARTIE : "online-noir"
+
+  CADENCE ||--o{ PARTIE : "cadence"
+  CADENCE ||--|{ TOURNOI : "regit"
+
+  OUVERTURE ||--o{ PARTIE : "ouvre"
+  OUVERTURE ||--o| SUITE_COUPS_STATS : "debute"
+  SUITE_COUPS_STATS ||--o{ PARTIE : "deplace"
+  SUITE_COUPS_STATS ||--o{ SUITE_COUPS_STATS : "precede"
+  POSITION_STATS ||--o{ PARTIE : "finit"
+
+  JOUEUR ||--o{ FRIENDSHIP : "envoie"
+  JOUEUR ||--o{ FRIENDSHIP : "recoit"
+  JOUEUR ||--o{ CHAT_MESSAGE : "ecrit"
+  JOUEUR ||--o{ CHAT_MESSAGE : "destine"
+
+  UTILISATEUR {
+    string id PK
+    string email
+    string hash
+    string nom
+    string prenom
+    date inscription_a
+    date connexion_a
+    date banni_a
+    string id_joueur FK
+  }
+  JOUEUR {
+    string id PK
+    string pseudonyme
+    int elo
+    int nb_victoires
+    int nb_defaites
+    int nb_nulles
+    string equipe
+    string fide_id
+  }
+  ROLE {
+    string id PK
+    string libelle
+  }
+  PROFIL {
+    string id PK
+    string libelle
+  }
+  TOURNOI {
+    string id PK
+    string libelle
+    string code
+    string site
+    string broadcast_url
+    date date_debut
+    date cree_a
+    date modifie_a
+  }
+  CADENCE {
+    string id PK
+    string libelle
+    int temps
+    int increment
+    string type_partie
+  }
+  PARTIE {
+    string id PK
+    string title
+    string resultat
+    string pgn
+    date date_heure_utc
+    int elo_blanc
+    int elo_noir
+    int score_blanc_diff
+    int score_noir_diff
+    string titre_blanc
+    string titre_noir
+    string type_resultat
+    int round
+    string broadcast_url
+    string game_url
+    string variant
+  }
+  ONLINE_PARTIE {
+    string id PK
+    string game_id
+    string resultat
+    string result_type
+    string pgn
+    string time_control
+    int total_moves
+    date played_at
+  }
+  OUVERTURE {
+    string id PK
+    string code
+    string libelle
+  }
+  SUITE_COUPS_STATS {
+    string id PK
+    string pgn
+    string pgn_hash
+    int nb_victoires
+    int nb_defaites
+    int nb_nulles
+    float probabilite_coup
+  }
+  POSITION_STATS {
+    string hash PK
+    string fen
+    int nb_total
+    int nb_victoires_blanc
+    int nb_victoires_noir
+    int nb_nulles
+    date updated_at
+  }
+  TACHEPOSITIONSTATS {
+    string id PK
+    string debut_partie_id
+    string fin_partie_id
+    string statut
+    int worker_rank
+    date debut_a
+    date fin_a
+    int tentative
+    string message_erreur
+    date cree_a
+  }
+  POSITIONSTATSPROGRESS {
+    string id PK
+    string derniere_partie_id_calculee
+  }
+  POSITION_STATS_STAGE {
+    string hash PK
+    string fen
+    int nb_total
+    int nb_victoires_blanc
+    int nb_victoires_noir
+    int nb_nulles
+  }
+  FRIENDSHIP {
+    string id PK
+    string status
+    date created_at
+  }
+  CHAT_MESSAGE {
+    string id PK
+    string content
+    date sent_at
+    string game_id
+    boolean is_read
+  }`;
+
+const { svg } = await mermaid.render('erd-svg', diagram);
+document.getElementById('erd').innerHTML = svg;
+
+const svgEl = document.querySelector('#erd svg.erDiagram');
+
+// Color groups: users=blue, games=yellow/amber, analysis=light blue, social=dark amber
+const colorMap = {
+  UTILISATEUR: { fill: dark ? '#0C447C' : '#E6F1FB', stroke: '#185FA5', header: '#185FA5' },
+  JOUEUR:      { fill: dark ? '#0C447C' : '#E6F1FB', stroke: '#185FA5', header: '#185FA5' },
+  ROLE:        { fill: dark ? '#0C447C' : '#E6F1FB', stroke: '#185FA5', header: '#185FA5' },
+  PROFIL:      { fill: dark ? '#0C447C' : '#E6F1FB', stroke: '#185FA5', header: '#185FA5' },
+
+  TOURNOI:       { fill: dark ? '#633806' : '#FAEEDA', stroke: '#EF9F27', header: '#EF9F27' },
+  CADENCE:       { fill: dark ? '#633806' : '#FAEEDA', stroke: '#EF9F27', header: '#EF9F27' },
+  PARTIE:        { fill: dark ? '#633806' : '#FAEEDA', stroke: '#EF9F27', header: '#EF9F27' },
+  ONLINE_PARTIE: { fill: dark ? '#633806' : '#FAEEDA', stroke: '#EF9F27', header: '#EF9F27' },
+
+  OUVERTURE:            { fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+  SUITE_COUPS_STATS:    { fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+  POSITION_STATS:       { fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+  TACHEPOSITIONSTATS:   { fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+  POSITIONSTATSPROGRESS:{ fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+  POSITION_STATS_STAGE: { fill: dark ? '#042C53' : '#B5D4F4', stroke: '#378ADD', header: '#378ADD' },
+
+  FRIENDSHIP:   { fill: dark ? '#412402' : '#FAC775', stroke: '#BA7517', header: '#BA7517' },
+  CHAT_MESSAGE: { fill: dark ? '#412402' : '#FAC775', stroke: '#BA7517', header: '#BA7517' },
+};
+
+// Round entity corners and apply colors
+document.querySelectorAll('#erd svg.erDiagram .node').forEach(node => {
+  const id = (node.id || '').replace(/^entity-/, '').split('-')[0];
+  const match = Object.keys(colorMap).find(k => id === k || node.id?.includes(k));
+  const colors = colorMap[match];
+
+  const firstPath = node.querySelector('path[d]');
+  if (firstPath) {
+    const d = firstPath.getAttribute('d');
+    const nums = d.match(/-?[\d.]+/g)?.map(Number);
+    if (nums && nums.length >= 8) {
+      const xs = [nums[0], nums[2], nums[4], nums[6]];
+      const ys = [nums[1], nums[3], nums[5], nums[7]];
+      const x = Math.min(...xs), y = Math.min(...ys);
+      const w = Math.max(...xs) - x, h = Math.max(...ys) - y;
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', x); rect.setAttribute('y', y);
+      rect.setAttribute('width', w); rect.setAttribute('height', h);
+      rect.setAttribute('rx', '8');
+      rect.setAttribute('fill', colors ? colors.fill : (dark ? '#0C447C' : '#E6F1FB'));
+      rect.setAttribute('stroke', colors ? colors.stroke : '#185FA5');
+      rect.setAttribute('stroke-width', '1.2');
+      firstPath.replaceWith(rect);
+    }
+  }
+
+  // Color the header row (first row-rect)
+  const headerRect = node.querySelector('.row-rect-even path, .row-rect-even rect');
+  if (headerRect && colors) {
+    headerRect.setAttribute('fill', colors.header);
+    headerRect.setAttribute('fill-opacity', dark ? '0.8' : '0.85');
+  }
+});
+
+// Strip borders from attribute rows
+document.querySelectorAll('#erd svg.erDiagram .row-rect-odd path, #erd svg.erDiagram .row-rect-even path, #erd svg.erDiagram .row-rect-odd rect, #erd svg.erDiagram .row-rect-even rect').forEach(p => {
+  p.setAttribute('stroke', 'none');
+});
+
+// Make entity title text white/light so it reads on colored header
+document.querySelectorAll('#erd svg.erDiagram .er.entityLabel').forEach(t => {
+  t.setAttribute('fill', '#FFFFFF');
+  t.style.fontWeight = '600';
+});
+
+// Style relationship labels
+document.querySelectorAll('#erd svg.erDiagram .relationshipLabelBox').forEach(b => {
+  b.setAttribute('fill', dark ? '#412402' : '#FAEEDA');
+  b.setAttribute('stroke', '#EF9F27');
+  b.setAttribute('stroke-width', '0.8');
+});
+document.querySelectorAll('#erd svg.erDiagram .relationshipLabel').forEach(t => {
+  t.setAttribute('fill', dark ? '#FAC775' : '#633806');
+});
+
+// Thicken relationship lines for visibility
+document.querySelectorAll('#erd svg.erDiagram .relationshipLine').forEach(l => {
+  l.setAttribute('stroke-width', '1.4');
+  l.setAttribute('stroke', dark ? '#FAC775' : '#BA7517');
+});
+</script>

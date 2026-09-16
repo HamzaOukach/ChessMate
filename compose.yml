@@ -1,0 +1,354 @@
+services:
+  postgres:
+    build:
+      context: ./postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      BACKEND_URL: http://host.docker.internal:8080
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - internal
+      - public
+    # Client MPI hors docker, on utilisera 5432 et IP du Host pour se co à postgres.
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-app} -d ${POSTGRES_DB:-appdb}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    labels:
+      - traefik.enable=false
+
+  traefik:
+    container_name: traefik
+    build:
+      context: ./traefik
+    command:
+      - --log.level=ERROR
+      - --api.debug=false
+      - --global.checknewversion=false
+      - --global.sendAnonymousUsage=true
+      - --api=true
+      - --api.dashboard=false
+      - --ping=true
+      - --ping.entryPoint=ping
+      - --entrypoints.ping.address=:8080
+      - --providers.docker=true
+      - --providers.docker.watch=true
+      - --providers.docker.endpoint=unix:///var/run/docker.sock
+      - --providers.docker.exposedbydefault=false
+      - --providers.file.filename=/etc/traefik/tls.yml
+      - --providers.file.watch=true
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --entrypoints.websecure.http.tls=true
+      - --entrypoints.web.http.redirections.entrypoint.to=websecure
+      - --entrypoints.web.http.redirections.entrypoint.scheme=https
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/tls.yml:/etc/traefik/tls.yml:ro
+    ports:
+      - "8086:80"
+      - "443:443"
+      - "8085:8080"
+    networks:
+      - public
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.api.service=api@internal
+      - traefik.http.routers.api.entrypoints=websecure
+      - traefik.http.routers.api.tls=true
+      - traefik.http.routers.api.rule=Host(`${TRAEFIK_HOST}`)
+      - traefik.http.routers.api.middlewares=securityheaders
+      - traefik.http.middlewares.securityheaders.headers.stsSeconds=31536000
+      - traefik.http.middlewares.securityheaders.headers.stsIncludeSubdomains=true
+      - traefik.http.middlewares.securityheaders.headers.contentTypeNosniff=true
+      - traefik.http.middlewares.securityheaders.headers.browserXssFilter=true
+
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - internal
+      - public
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.frontend.entrypoints=websecure
+      - traefik.http.routers.frontend.tls=true
+      - traefik.http.services.frontend.loadbalancer.server.port=80
+      - traefik.docker.network=chessmate_proxy
+      - traefik.http.routers.frontend.rule=Host(`${FRONTEND_HOST}`)
+      - traefik.http.routers.frontend.middlewares=securityheaders
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+    volumes:
+      - shared-data:/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - internal
+      - public
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.backend.entrypoints=websecure
+      - traefik.http.routers.backend.tls=true
+      - traefik.http.services.backend.loadbalancer.server.port=8080
+      - traefik.docker.network=chessmate_proxy
+      - traefik.http.routers.backend.rule=Host(`${BACKEND_HOST}`)
+      - traefik.http.routers.backend.middlewares=securityheaders
+      # upload limit Traefik
+      - traefik.http.middlewares.backend-buffering.buffering.maxRequestBodyBytes=209715200
+      - traefik.http.middlewares.backend-buffering.buffering.memRequestBodyBytes=10485760
+
+  # Trichebot - Cheat Detection ML Service
+  trichebot:
+    build:
+      context: ./trichebot
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8003:5000"
+    networks:
+      - internal
+      - public
+    labels:
+      - traefik.enable=false
+
+  # ML Bot Engine (TensorFlow)
+  ml_bot_engine:
+    build:
+      context: ./ai_engine
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      - BACKEND_URL=http://backend:8080
+    ports:
+      - "8002:8000"
+    networks:
+      - internal
+      - public
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.mlbot.entrypoints=websecure
+      - traefik.http.routers.mlbot.tls=true
+      - traefik.http.services.mlbot.loadbalancer.server.port=8000
+      - traefik.docker.network=chessmate_proxy
+      - traefik.http.routers.mlbot.rule=Host(`${BACKEND_HOST}`) && (PathPrefix(`/api/chess/custom-bot`) || PathPrefix(`/api/chess/multiplayer`) || PathPrefix(`/api/chess/ws`))
+      - traefik.http.routers.mlbot.priority=100
+      - traefik.http.routers.mlbot.middlewares=securityheaders
+
+  # Stockfish Engine (Analysis)
+  stockfish_engine:
+    build:
+      context: ./stockfish_engine
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    networks:
+      - internal
+      - public
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.stockfish.entrypoints=websecure
+      - traefik.http.routers.stockfish.tls=true
+      - traefik.http.services.stockfish.loadbalancer.server.port=8000
+      - traefik.docker.network=chessmate_proxy
+      - traefik.http.routers.stockfish.rule=Host(`${BACKEND_HOST}`) && PathPrefix(`/api/chess/bestmove`)
+      - traefik.http.routers.stockfish.priority=100
+      - traefik.http.routers.stockfish.middlewares=securityheaders
+
+  etl:
+    # Pas lancé au démarrage.
+    # docker compose --profile jobs run etl
+    profiles: [ "jobs" ] # le service ne sera pas lancé par défaut
+    build:
+      context: ./etl
+      dockerfile: Dockerfile
+    restart: no
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./data:/data
+      - shared-data:/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - internal
+      - public
+    labels:
+      - traefik.enable=false
+
+  telegraf:
+    build:
+      context: ./telegraf
+    command: telegraf --config /telegraf_conf
+    user: "0:0"  # root à cause de Docker Desktop de Windows.
+    environment:
+      TELEGRAF_USER: ${POSTGRES_TELEGRAF_USER}
+      TELEGRAF_PASSWORD: ${POSTGRES_TELEGRAF_PASSWORD}
+      TELEGRAF_DB: ${POSTGRES_TELEGRAF_DB}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./telegraf/telegraf.conf:/telegraf_conf
+    networks:
+      - internal
+    labels:
+      - traefik.enable=false
+    depends_on:
+      grafana-telegraf-setup:
+        condition: service_completed_successfully
+    mem_limit: 100m
+
+  grafana:
+    image: grafana/grafana-oss:12.0.0-ubuntu
+    container_name: grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+      - GF_LOG_LEVEL=info
+      - GF_LOG_MODE=console
+      - GF_SERVER_ROOT_URL=https://${GRAFANA_HOST}
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.grafana.entrypoints=websecure
+      - traefik.http.routers.grafana.tls=true
+      - traefik.http.services.grafana.loadbalancer.server.port=3000
+      - traefik.docker.network=chessmate_proxy
+      - traefik.http.routers.grafana.rule=Host(`${GRAFANA_HOST}`)
+      - traefik.http.routers.grafana.middlewares=securityheaders
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:3000/api/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    networks:
+      - proxy
+      - internal
+
+  grafana-telegraf-setup:
+    build:
+      context: ./grafana_telegraf_setup
+    container_name: grafana-telegraf-setup
+    environment:
+      GF_URL: http://${GF_SECURITY_ADMIN_USER}:${GF_SECURITY_ADMIN_PASSWORD}@grafana:3000
+      TELEGRAF_USER: ${POSTGRES_TELEGRAF_USER}
+      TELEGRAF_PASSWORD: ${POSTGRES_TELEGRAF_PASSWORD}
+      TELEGRAF_DB: ${POSTGRES_TELEGRAF_DB}
+      POSTGRES_URL: postgres:5432
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      GF_MAIN_ORG_ID: ${GF_MAIN_ORG_ID:-1}
+    depends_on:
+      grafana:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    networks:
+      - internal
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - proxy
+      - internal
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      - traefik.enable=false
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE: worker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+    volumes:
+      - shared-data:/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - internal
+
+configs:
+  telegraf_conf:
+    file: ./telegraf/telegraf.conf
+
+networks:
+  public:
+    name: chessmate_public
+    driver: bridge
+  proxy:
+    name: chessmate_proxy
+    internal: true
+  internal:
+    name: chessmate_internal
+    internal: true
+
+volumes:
+  postgres-data:
+  grafana-storage:
+  shared-data:
+
+
+

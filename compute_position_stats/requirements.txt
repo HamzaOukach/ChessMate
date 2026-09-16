@@ -1,0 +1,4 @@
+psycopg[binary]>=3.2.13
+python-chess>=1.11.0
+mpi4py>=4.1.1
+python-dotenv>= 1.2.1

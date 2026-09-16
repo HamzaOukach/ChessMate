@@ -1,0 +1,1 @@
+INSERT INTO Joueur (pseudonyme, elo) VALUES ('System', 2000);

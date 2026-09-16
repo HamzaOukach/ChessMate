@@ -1,0 +1,61 @@
+# The Docker image that will be used to build your app
+image: jetbrains/writerside-builder:243.22562
+variables:
+  INSTANCE: 'Writerside/hi'
+  DOCKER_VERSION: '2025.04.8412'
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: registry.jetbrains.team/p/writerside/builder/writerside-builder:$DOCKER_VERSION
+  script:
+    - set -e
+    - export DISPLAY=:99
+    - Xvfb :99 &
+    - PROJECT_ID=$(echo $INSTANCE | cut -d'/' -f2 | tr '[:lower:]' '[:upper:]')
+    - ARTIFACT="webHelp${PROJECT_ID}2-all.zip"
+    - /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $INSTANCE --runner gitlab -output-dir public
+    - echo "Testing existence of $ARTIFACT..."
+    - ls -la public
+    - test -e public/$ARTIFACT
+  artifacts:
+    paths:
+      - public/$ARTIFACT
+      - public/report.json
+      - public/$ALGOLIA_ARTIFACT
+    expire_in: 1 week
+
+test:
+  stage: test
+  image: eclipse-temurin:18-alpine
+  before_script:
+    - apk add curl
+  script:
+    - cd public
+    - curl -o wrs-checker.jar -L https://packages.jetbrains.team/maven/p/writerside/maven/com/jetbrains/writerside/writerside-ci-checker/1.0/writerside-ci-checker-1.0.jar
+    - java -jar wrs-checker.jar report.json $INSTANCE
+  dependencies:
+    - build
+
+pages:
+  stage: deploy
+  image: ubuntu:latest
+  before_script:
+    - apt-get update -y && apt-get install unzip -y
+
+  script:
+    - PROJECT_ID=$(echo $INSTANCE | cut -d'/' -f2 | tr '[:lower:]' '[:upper:]')
+    - ARTIFACT="webHelp${PROJECT_ID}2-all.zip"
+    - echo "Using artifact $ARTIFACT"
+    - cd public
+    - unzip -O UTF-8 $ARTIFACT
+  dependencies:
+    - build
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week

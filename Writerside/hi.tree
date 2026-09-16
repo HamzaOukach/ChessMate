@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                  name="ChessMate Documentation"
+                  start-page="installer-docker-et-docker-compose.md">
+
+    <toc-element toc-title="Installation et Configuration">
+        <toc-element topic="Utiliser-le-DNS-sous-Linu.md"/>
+        <toc-element topic="installer-docker-et-docker-compose.md"/>
+        <toc-element topic="installation-guide-user.md"/>
+        <toc-element topic="deployer-production.md"/>
+        <toc-element topic="Modifier-le-DNS-sur-preprod.md"/>
+    </toc-element>
+
+
+</instance-profile>

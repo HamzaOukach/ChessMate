@@ -1,0 +1,34 @@
+# IDEs & project metadata
+.idea/
+*.iml
+.vscode/
+
+# Build / compilation artifacts
+target/
+.gradle/
+.mvn/wrapper/*.jar
+
+# Node.js dependencies
+node_modules/
+
+# Temporary & log files
+**/tmp/
+**/logs/
+
+# Environment variables
+.env
+.env.dev
+
+# Git metadata (inutile mais sans risque)
+data/*
+# Optionnel (mais propre)
+# Exclure le dossier .git n’a pas de sens, car il ne peut pas être versionné de toute façon.
+# .git
+
+# Fichiers liés au certificat local
+traefik/cert.pem
+traefik/private.key
+
+frontend/build
+stockfish_engine/__pycache__/main.cpython-311.pyc
+ai_engine/__pycache__/main.cpython-311.pyc

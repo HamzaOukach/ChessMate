@@ -1,0 +1,10 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root       17972  0.7 75.9 29318496 24969028 ?   Ssl  sept.17 762:07 /usr/libexec/xdg-desktop-portal
+dnsmasq  2943156  4.3  0.9 542328 323260 ?       Ds   nov.26  79:39 postgres: chessmate chessmate 172.18.0.3(57368) INSERT
+root     1830774  0.2  0.9 3145816 303124 ?      Sl   nov.09  58:52 /usr/lib/firefox-esr/firefox-esr
+root     1831288  0.0  0.4 2764340 154812 ?      Sl   nov.09  17:12 /usr/lib/firefox-esr/firefox-esr -contentproc -isForBrowser -prefsHandle 0:40743 -prefMapHandle 1:270828 -jsInitHandle 2:242716 -parentBuildID 20251009121631 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {3cde1471-9803-45fe-933b-d75503ed191c} -parentPid 1830774 -crashReporter 6 -crashHelper 7 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appDir /usr/lib/firefox-esr/browser 8 tab
+dnsmasq   326152  0.0  0.4 221536 144220 ?       Ss   nov.18   0:43 postgres: checkpointer
+dnsmasq   326153  0.0  0.4 221296 142388 ?       Ss   nov.18   7:33 postgres: background writer
+root         639  2.8  0.3 1573044 113132 tty7   Ssl+ sept.17 2930:34 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root     1831095  0.0  0.3 2582932 100996 ?      Sl   nov.09   6:12 /usr/lib/firefox-esr/firefox-esr -contentproc -isForBrowser -prefsHandle 0:34441 -prefMapHandle 1:270828 -jsInitHandle 2:242716 -parentBuildID 20251009121631 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {81f3aa2e-5b49-4f8f-b176-391e729d31fc} -parentPid 1830774 -crashReporter 6 -crashHelper 7 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appDir /usr/lib/firefox-esr/browser 4 tab
+root     1746170  0.2  0.2 3250144 86936 ?       Ssl  nov.09  53:59 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
