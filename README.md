@@ -1,29 +1,30 @@
-# README – Installation & Démarrage
+`````markdown
+# README – Installation & Setup
 
-Ce document décrit, dans l’ordre, les étapes pour préparer l’environnement, construire les images et lancer l’application.
+This document describes, in order, the steps to prepare the environment, build the images, and launch the application.
 
 ---
 
-## 0) Créer un **GitLab Personal Access Token**
+## 0) Create a **GitLab Personal Access Token**
 
-1. Ouvrir **GitLab** → **Preferences** → **Access Tokens**.
-2. Cliquer sur **Add new token** et choisir un nom explicite.
-3. Cocher les permissions :
+1. Open **GitLab** → **Preferences** → **Access Tokens**.
+2. Click **Add new token** and choose a clear name.
+3. Check the following permissions:
 
    * ✅ `api`
    * ✅ `read_registry`
    * ✅ `write_registry`
-4. Cliquer sur **Create personal access token** et **copier immédiatement** le token affiché.
+4. Click **Create personal access token** and **copy the token immediately** once it's displayed.
 
-> Conservez ce token en sécurité ; il pourra être référencé via le `.env` si nécessaire. Avec Git en HTTPS, il peut aussi être demandé comme **mot de passe** lors des opérations `clone/pull/push`.
+> Keep this token secure; it may be referenced via `.env` if needed. With Git over HTTPS, it may also be requested as a **password** during `clone/pull/push` operations.
 
 ---
 
-## 1) Cloner le dépôt
+## 1) Clone the repository
 
-> **Note** : le serveur GitLab peut avoir un certificat SSL mal configuré. Deux options :
+> **Note**: the GitLab server may have a misconfigured SSL certificate. Two options:
 >
-> **Option A – Désactiver globalement (rapide mais non recommandé)**
+> **Option A – Disable globally (quick but not recommended)**
 >
 > ```bash
 > git config --global http.sslVerify false
@@ -31,14 +32,14 @@ Ce document décrit, dans l’ordre, les étapes pour préparer l’environnemen
 > cd lichess-2025-2026
 > ```
 >
-> **Option B – Désactiver au cas par cas (recommandé)**
+> **Option B – Disable on a case-by-case basis (recommended)**
 >
 > ```bash
 > git -c http.sslVerify=false clone https://gitlabvigan.iem/m1projettutore2025-2026-groupe4/lichess-2025-2026.git
 > cd lichess-2025-2026
 > ```
 >
-> Pensez à réactiver la vérification SSL plus tard si vous avez utilisé l’option A :
+> Remember to re-enable SSL verification later if you used Option A:
 >
 > ```bash
 > git config --global http.sslVerify true
@@ -46,169 +47,170 @@ Ce document décrit, dans l’ordre, les étapes pour préparer l’environnemen
 
 ---
 
-## 2) Prérequis : installer Docker & Docker Compose
+## 2) Prerequisites: install Docker & Docker Compose
 
-Suivre la documentation officielle de votre système pour installer **Docker** et **Docker Compose**.
+Follow the official documentation for your system to install **Docker** and **Docker Compose**.
 
-**Vérifier l’installation :**
+**Check the installation:**
 
 ```bash
 docker --version
 docker compose version
 ```
 
-### Ajouter votre utilisateur au groupe `docker`
+### Add your user to the `docker` group
 
-Pour exécuter Docker sans `sudo`:
+To run Docker without `sudo`:
 
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-> Déconnectez-vous puis reconnectez-vous (ou redémarrez la machine) pour appliquer le changement.
+> Log out and log back in (or restart the machine) for the change to take effect.
 
-**Contrôle rapide :**
+**Quick check:**
 
 ```bash
 docker ps
 ```
 
-Si la commande s’exécute sans erreur, vous êtes bien dans le groupe `docker`.
+If the command runs without error, you're correctly in the `docker` group.
 
 ---
 
-## 3) Configuration de l’environnement – fichier `.env`
+## 3) Environment configuration – `.env` file
 
-Le fichier `.env` centralise les variables de configuration du projet (ports, URLs, identifiants, secrets, etc.).
+The `.env` file centralizes the project's configuration variables (ports, URLs, credentials, secrets, etc.).
 
-1. Copier le modèle fourni :
+1. Copy the provided template:
 
    ```bash
    cp .env.example .env
    ```
-2. Ouvrir `.env` et adapter **les valeurs** à votre contexte local (domaines, ports, mots de passe, clés d’API…).
-3. Conserver `.env` **en local** (ne pas le committer si le repository est public) car il contient des secrets.
+2. Open `.env` and adjust the **values** to your local context (domains, ports, passwords, API keys, etc.).
+3. Keep `.env` **local** (do not commit it if the repository is public) since it contains secrets.
 
-> **Note :** Plusieurs services (Traefik, MinIO, etc.) lisent leurs paramètres depuis ce fichier. Vérifiez que **toutes** les clés requises sont renseignées avant de démarrer.
+> **Note:** Several services (Traefik, MinIO, etc.) read their settings from this file. Make sure **all** required keys are filled in before starting.
 
 ---
 
-## 4) Générer les certificats de développement (Traefik)
+## 4) Generate development certificates (Traefik)
 
-Se placer dans le répertoire `traefik`:
+Go to the `traefik` directory:
 
 ```bash
 cd traefik
 ```
 
-Générer la clé privée RSA:
+Generate the RSA private key:
 
 ```bash
 openssl genrsa -out private.key 2048
 ```
 
-Générer le certificat auto-signé (remplacez `docker.localhost` par votre domaine si nécessaire):
+Generate the self-signed certificate (replace `docker.localhost` with your own domain if needed):
 
 ```bash
 openssl req -new -x509 -key private.key -out cert.pem -days 365 -subj "/CN=docker.localhost"
 ```
 
-> **Remarque :** Les navigateurs signaleront un avertissement (connexion non sécurisée) car le certificat n’est pas signé par une autorité de confiance. Pour un usage **développement**, cela reste suffisant.
+> **Note:** Browsers will show a warning (insecure connection) since the certificate isn't signed by a trusted authority. For **development** purposes, this is sufficient.
 
 ---
 
-## 5) Construire les images et lancer les conteneurs
+## 5) Build the images and launch the containers
 
-Après avoir rempli le `.env`, construire et lancer :
+Once `.env` is filled in, build and launch:
 
 ```bash
 docker compose up --build
 ```
 ---
 
-## 6) Configuration de MinIO
+## 6) MinIO configuration
 
-### Se connecter à l’interface MinIO
+### Log in to the MinIO interface
 
-* **URL de développement (par défaut)** : [https://storage.docker.localhost/](https://storage.docker.localhost/)
-  *(Adaptez selon votre nom de domaine.)*
-* À l’écran de connexion : **Other Authentication Methods** → **Use Credentials**.
-* **Utilisateur** : `minio_admin`
-* **Mot de passe** : valeur définie lors de l’exécution de `generate_env.py` (ou dans votre `.env`).
+* **Default development URL**: [https://storage.docker.localhost/](https://storage.docker.localhost/)
+  *(Adjust according to your domain name.)*
+* On the login screen: **Other Authentication Methods** → **Use Credentials**.
+* **Username**: `minio_admin`
+* **Password**: value set when running `generate_env.py` (or in your `.env`).
 
-Les identifiants root se configurent dans le fichier `.env` via :
+Root credentials are configured in the `.env` file via:
 
 ```
 MINIO_ROOT_USER=minio_admin
 MINIO_ROOT_PASSWORD=CHANGEME
 ```
 
-### Créer une Access Key
+### Create an Access Key
 
-1. Ouvrir **Access Keys** dans la barre latérale gauche.
-2. Cliquer sur **Create access key +**.
-3. Cliquer sur **Create** pour générer une nouvelle paire (Access/Secret).
-4. **Copier** les valeurs générées et mettre à jour votre `.env` :
+1. Open **Access Keys** in the left sidebar.
+2. Click **Create access key +**.
+3. Click **Create** to generate a new pair (Access/Secret).
+4. **Copy** the generated values and update your `.env`:
 
 ```
-# URL interne utilisée par les services (Docker ↔ MinIO)
+# Internal URL used by services (Docker ↔ MinIO)
 MINIO_SERVER_URL=http://minio:9000
 
-# Identifiants d’accès applicatifs MinIO
+# MinIO application access credentials
 MINIO_ACCESS_KEY=PASTE_ACCESS_KEY_HERE
 MINIO_SECRET_KEY=PASTE_SECRET_KEY_HERE
 ```
 
-> Astuce : conservez ces clés en lieu sûr et ne les versionnez jamais.
+> Tip: keep these keys safe and never commit them to version control.
 
-**Points à prévoir :**
+**Things to plan for:**
 
-* Où récupérer les identifiants (UI MinIO, variables par défaut, procédure d’initialisation…).
-* Quelles variables ajouter dans `.env` (ex. `MINIO_ENDPOINT`, `MINIO_ACCESS_KEY`, `MINIO_SECRET_KEY`, `MINIO_REGION`, `MINIO_BUCKET_*`, etc.).
-* Bonnes pratiques (droits minimaux, rotation des secrets, stockage hors VCS).
+* Where to retrieve credentials (MinIO UI, default variables, initialization process...).
+* Which variables to add to `.env` (e.g. `MINIO_ENDPOINT`, `MINIO_ACCESS_KEY`, `MINIO_SECRET_KEY`, `MINIO_REGION`, `MINIO_BUCKET_*`, etc.).
+* Best practices (least-privilege access, secret rotation, keeping secrets out of version control).
 
 ---
 
-## 7) Notes & dépannage (rapide)
+## 7) Notes & troubleshooting (quick)
 
-* Si `docker ps` échoue sans `sudo`, vérifiez votre appartenance au groupe `docker` et reconnectez votre session.
-* En cas d’alerte SSL dans le navigateur, c’est attendu en **dev** avec un certificat auto-signé.
-* Assurez-vous que toutes les valeurs sensibles de `.env` sont bien définies avant `docker compose up`.
-* Si vous êtes sur windows attention au retour de ligne. Pour bien configurer votre projet, utilisez les commandes ci-dessous. 
+* If `docker ps` fails without `sudo`, check that you're in the `docker` group and reconnect your session.
+* An SSL warning in the browser is expected in **dev** with a self-signed certificate.
+* Make sure all sensitive `.env` values are properly set before running `docker compose up`.
+* If you're on Windows, watch out for line endings. To properly configure your project, use the commands below:
+
+```
 git config core.autocrlf input
 git rm --cached -r .
 git reset --hard
+```
 
 ---
 
-## 8) URLs en dev
+## 8) Dev URLs
 https://minio.docker.localhost
 https://api.docker.localhost (backend)
-https://traefik.docker.localhost (url traefik en dev)
+https://traefik.docker.localhost (Traefik URL in dev)
 
 ---
 
-## 9) Lancer l'ETL/BD
-* Pour lancer l'ETL, lancez Docker Desktop puis:
+## 9) Running the ETL/DB
+* To run the ETL, launch Docker Desktop then:
 
-
-* Mettez vous dans le répertoire du projet et copiez le .env dans le dossier /etl:
+* Go to the project directory and copy the `.env` file into the `/etl` folder:
    ```bash
   cp ./env ./etl/.env
   ```
-* Build & lancer docker:
+* Build & launch docker:
     ```bash
   docker compose build
   docker compose up -d
   ```
-* Plus qu'à lancer l'ETL via:
+* Then just run the ETL via:
    ```
-  docker compose --profile jobs build etl (des fois obligé de le faire pour les changements de code j'ignore pourquoi)
-  docker compose --profile jobs run --remove-orphans etl (le remove orphans pour alléger la mémoire si lancé plusieurs fois)
+  docker compose --profile jobs build etl (sometimes needed for code changes to take effect, not sure why)
+  docker compose --profile jobs run --remove-orphans etl (remove-orphans to reduce memory usage if run multiple times)
   ```
-* Pour accéder à la BD PostgreSQL :
+* To access the PostgreSQL DB:
    ```bash
   docker compose exec postgres psql -U chessmate -d chessmate
   ```
-
-Besoin d'autres ?? Signaler le à votre devops préféré et/ou votre meilleur chef de projet :)
+`````
