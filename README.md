@@ -1,5 +1,13 @@
 # ♟️ ChessMate
+ChessMate is a web-based decision-support application for chess players.It lets users play against a human opponent or a game engine, with or without assistance, while providing in-depth game analysis, move recommendations, and performance statistics.
 
+The platform is built on top of Lichess's open dataset (PGN format, CC0 license), which required designing a scalable architecture capable of ingesting and analyzing massive volumes of chess game data.
+
+Key features include:
+- Cheat and non-human behavior detection
+- A bot simulating different playing styles
+- Blunder detection powered by the Stockfish engine
+- Real-time outcome prediction combining engine evaluation and historical statistics
 # Installation & Setup
 
 This part describes, in order, the steps to prepare the environment, build the images, and launch the application.
