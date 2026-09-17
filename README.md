@@ -8,6 +8,14 @@ Key features include:
 - A bot simulating different playing styles
 - Blunder detection powered by the Stockfish engine
 - Real-time outcome prediction combining engine evaluation and historical statistics
+## My Role
+
+This was a year-long project developed by a team of 9. As **Backend & Security Lead**, my main contributions included:
+
+- Implemented a JWT-based authentication system with Spring Security, including user registration linked to player data imported from Lichess
+- Developed the full set of SQL queries and the backend statistics service
+- Designed a centralized REST API returning all metrics in a single call, with a decoupled data-transfer layer separating the database from the frontend
+- Developed the frontend statistics page with interactive charts
 # Installation & Setup
 
 This part describes, in order, the steps to prepare the environment, build the images, and launch the application.
