@@ -163,6 +163,7 @@ MINIO_SECRET_KEY=PASTE_SECRET_KEY_HERE
 
 ```
 git config core.autocrlf input
+
 git rm --cached -r .
 git reset --hard
 ```
@@ -197,4 +198,12 @@ https://traefik.docker.localhost (Traefik URL in dev)
    ```bash
   docker compose exec postgres psql -U chessmate -d chessmate
   ```
+# 🎬 Demo
+
+
+https://github.com/user-attachments/assets/c594b0ea-19b2-4fc9-99f7-fb23b9478492
+
+
+
+
 
